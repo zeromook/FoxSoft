@@ -48,6 +48,18 @@ public class EipOcuNoticeController {
     @Resource(name = "messageSource")
     private MessageSource messageSource;
 	
+    
+ @RequestMapping(value="/kcue/ast/eip/ocu/notice/EipOcuNoticeGesipan.do")
+    public String selectGesipanList(ModelMap model) {
+	 
+	 System.out.println("컨트롤러들어옴----------------------------------------------------------------------------");
+	 return "kcue/ast/eip/ocu/notice/EipOcuNoticeGesipan";
+ }
+    
+    
+    
+    
+    
     /**
 	 * EipOcuNotice 초기값을 불러온다.
 	 * @param

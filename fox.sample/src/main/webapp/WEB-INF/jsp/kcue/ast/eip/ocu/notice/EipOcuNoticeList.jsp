@@ -309,7 +309,7 @@
 	                    <p class="list_ct">총<span class="num" id="totalCountOrg">0</span>건이 있습니다.</p>
 	                     <form:select path="pageSize" class="list_num" id="pageSize" items="${pageSizeList}" itemValue="ctgryStr" itemLabel="ctgryName" multiple="false" onchange="fn_pageOnChange();"/>
 	                </div>
-	                
+	                <a href="/kcue/ast/eip/ocu/notice/EipOcuNoticeGesipan.do"><h1>게시판.........................................</h1></a>
 	                <div class="tbl_list">
 	                   <table>
 	                      <caption>인증대학현황 지역별 리스트</caption>
