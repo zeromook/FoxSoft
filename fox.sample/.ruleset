@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         name=""
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+   <description></description>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/AvoidReassigningParameters"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/AvoidSynchronizedAtMethodLevel"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/DuplicateImports"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/EmptyCatchBlock"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/EmptyFinallyBlock"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/EmptyIfStmt"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/EmptyStatementNotInLoop"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/EmptyTryBlock"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/EmptyWhileStmt"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/FinalFieldCouldBeStatic"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/ImportFromSamePackage"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/StringInstantiation"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/SystemPrintln"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/UncommentedEmptyMethod"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/UnnecessaryConversionTemporary"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/UselessStringValueOf"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/AssignmentInOperand"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/StringToString"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/SimpleDateFormatNeedsLocale"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/UnusedPrivateField"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/UnusedFormalParameter"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/UnnecessaryWrapperObjectCreation"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/InefficientStringBuffering"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/WhileLoopsMustUseBraces"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/EqualsNull"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/AssignmentToNonFinalStatic"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/UnnecessaryParentheses"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/SimplifyBooleanExpressions"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/AvoidArrayLoops"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/InefficientEmptyStringCheck"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/UnusedPrivateMethod"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/SwitchStmtsShouldHaveDefault"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/AvoidThrowingRawExceptionTypes"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/AbstractClassWithoutAbstractMethod"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/AvoidConstantsInterface"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/AvoidThrowingNullPointerException"/>
+   <rule ref="C:\eGov31\egovinspectionrules-3.5\EgovInspectionRules_kor-3.5.xml/ImmutableField"/>
+</ruleset>

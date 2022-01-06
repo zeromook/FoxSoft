@@ -1,0 +1,110 @@
+﻿/*container*/
+
+.main_content_wrap{ width: 100%; }
+
+/* 메인 비주얼 영역 */
+.main_visual_box { width: 100%; position: relative; margin: 0 auto; border-bottom: 1px solid #c8d9e4; background: #ecf7fe url(/ocu/images/img/main_visual_img.png) 50% 0 no-repeat; /* font-family: 'Noto Sans KR', sans-serif, 'New Gulim';*/ }
+.main_visual{ width: 1200px; height: 462px; position: relative; margin: 0 auto; padding: 13px 0 13px 7px; }
+.main_map{ width: 432px; height: 460px; position: relative; background: #fff; box-shadow: 2px 3px 10px rgba(0,0,0,0.3); float:left; text-align:center; z-index: 10; margin-top: 2px; }
+.map_selectAll{ position: absolute; top: 12px; right: 12px; z-index: 1000; }
+.map_selectAll a{ display: inline-block; position: relative; color: #777; font-size: 14px; background: #fff; border:1px solid #d6dae1; padding:6px 8px 4px 28px; letter-spacing: -1px; height: 18px; background: url(/ocu/images/icon/ic_selectall.png) 6px 50% no-repeat; }
+.map_selectAll a.on{ color: #042961; background: url(/ocu/images/icon/ic_selectall_on.png) 6px 50% no-repeat; font-weight: bold; }
+.map_selectAll a:hover{ color: #042961; background: url(/ocu/images/icon/ic_selectall_on.png) 6px 50% no-repeat; }
+.map_click{ position: absolute; bottom: 12px; right: 18px; z-index: 1000; }
+.map_content{ background: url(/ocu/images/img/map_bg.jpg) 50% 50% no-repeat; text-align: center; }
+.main_bn{ float: left; margin:30px 0 0 95px; }
+.main_bn h1{ line-height: 2.2; } 
+.main_bn h2.date{ font-size: 24px; font-weight: 800; font-family: 'Nanumsquare', Noto Sans KR, sans-serif, 'New Gulim'; margin-top:20px; color:#222; }
+.main_search_box{ position: relative; float: left; margin-top:30px; text-align: center; background: #3793e2; box-shadow: 0 10px rgb(6,129,206); width:762px; height: 182px; padding: 28px 0; z-index: 1; color:#fff; }
+.main_search_box > h3{ font-size: 38px; margin:0 0 16px 0; font-family: 'Noto Sans KR', sans-serif, 'New Gulim'; }
+.main_search_box > h3 > span{ font-weight: bold; margin-right: 8px; }
+.main_search_box p{ font-size: 15px; font-weight: normal; letter-spacing:-1px; }
+.main_search_box .btn{ margin: 14px 0 20px 0;}
+.main_search_box .tt{ font-weight: 600; padding-right: 14px; background: url(/ocu/images/bl/bl_line_wh.gif) 64px 4px no-repeat; }
+
+.main_search_box .btn_info{ display: inline-block; position: relative; color: #fff; font-size: 14px; background: #54c491; box-shadow: 1px 5px 0 #2f7dc0; padding: 7px 20px 5px 32px; letter-spacing: -1px; height: 18px; border-radius: 30px; }
+.main_search_box .btn_info:before { content: ""; position: absolute; top: 50%; left: 10px; width: 20px; height: 14px; background: url(/ocu/images/icon/ic_info.png) 0 0 no-repeat; transform: translateY(-50%); }
+.main_search_box .btn_info:after { content: ""; position: absolute; top: 50%; right: 7px; width: 8px; height: 11px; background: url(/ocu/images/btn/btn_arrow.png) 0 0 no-repeat; transform: translateY(-50%); }
+.main_search_box .btn_info:hover{ background: #3cc385; }
+
+.main_search_box .btn_bookmark{ display: inline-block; position: relative; margin-left:4px; color: #fff; font-size: 14px; background: #ebbf3b; box-shadow: 1px 5px 0 #2f7dc0; padding: 7px 20px 5px 32px; letter-spacing: -1px; height: 18px; border-radius: 30px; }
+.main_search_box .btn_bookmark:before { content: ""; position: absolute; top: 50%; left: 10px; width: 20px; height: 14px; background: url(/ocu/images/icon/ic_bookmark.png) 0 0 no-repeat; transform: translateY(-50%); }
+.main_search_box .btn_bookmark:after { content: ""; position: absolute; top: 50%; right: 7px; width: 8px; height: 11px; background: url(/ocu/images/btn/btn_arrow.png) 0 0 no-repeat; transform: translateY(-50%); }
+.main_search_box .btn_bookmark:hover{ background: #e8b418; }
+
+.main_search_box .btn_download{ display: inline-block; position: relative; margin-left:4px; color: #fff; font-size: 14px; background: #27c8ea; box-shadow: 1px 5px 0 #2f7dc0; padding: 7px 20px 5px 32px; letter-spacing: -1px; height: 18px; border-radius: 30px; }
+.main_search_box .btn_download:before { content: ""; position: absolute; top: 50%; left: 10px; width: 20px; height: 14px; background: url(/ocu/images/icon/ic_uvlist.png) 0 0 no-repeat; transform: translateY(-50%); }
+.main_search_box .btn_download:after { content: ""; position: absolute; top: 50%; right: 7px; width: 8px; height: 11px; background: url(/ocu/images/btn/btn_arrow.png) 0 0 no-repeat; transform: translateY(-50%); }
+.main_search_box .btn_download:hover{ background: #12bbdf; }
+
+.main_search_box .btn_more{ display: inline-block; position: relative; margin-left:10px; color: #fff; font-size: 14px; background: #1f72ba; padding: 5px 12px 5px 30px; letter-spacing: -1px; height: 14px; }
+.main_search_box .btn_more:before { content: ""; position: absolute; top: 50%; left: 10px; width: 16px; height: 10px; background: url(/ocu/images/icon/ic_download.png) 0 0 no-repeat; transform: translateY(-50%); }
+.main_search_box .btn_more:hover{ background: #1462a5; }
+.search_cont { margin-top: 14px;}
+.search_cont input{ width: 338px; height: 48px; padding: 0 20px; border:none; font-size: 16px; }
+.search_cont .btn_search{ display: inline-block; position: relative; margin-left:5px; color: #fff; font-size: 16px; background: #222222; padding: 15px 24px 10px 50px; letter-spacing: -1px; height: 23px; border:none; vertical-align:middle; }
+.search_cont .btn_search:before{ content: ""; position: absolute; top: 50%; left: 26px; width: 16px; height: 16px; background: url(/ocu/images/btn/btn_search.png) 0 0 no-repeat; transform: translateY(-50%); }
+.search_cont .btn_search:hover{ background: #111; }
+.map_content{ text-align: center; }
+.map_content .mapImg {position:relative;height:452px;}
+.map_content .mapImg span {position:absolute;top:0;left:36px;z-index:1;}
+.map_content .mapImg span.back {z-index:0 !important;}
+.map_content .mapImg span.img01 {z-index:17;}
+.map_content .mapImg span.img17 {z-index:16;}
+.map_content .mapImg span.img08 {z-index:15;}
+.map_content .mapImg span.img06 {z-index:14;}
+.map_content .mapImg span.img04 {z-index:13;}
+.map_content .mapImg span.img16 {z-index:12;}
+.map_content .mapImg span.img02 {z-index:11;}
+.map_content .mapImg span.img07 {z-index:10;}
+.map_content .mapImg span.img10 {z-index:9;}
+.map_content .mapImg span.img11 {z-index:8;}
+.map_content .mapImg span.img15 {z-index:7;}
+.map_content .mapImg span.img03 {z-index:6;}
+.map_content .mapImg span.img14 {z-index:5;}
+.map_content .mapImg span.img05 {z-index:4;}
+.map_content .mapImg span.img13 {z-index:3;}
+.map_content .mapImg span.img12 {z-index:2;}
+.map_content .mapImg span.img09 {z-index:1;}
+
+/* 학교 검색 리스트 영역 */
+.main_board_wrap{ width: 1200px; margin: 0 auto; min-height:200px; }
+.main_board{ width: 100%; margin: 0 auto; padding-top: 30px; display: inline-block; position: relative; }
+.main_board h3{ font-size: 16px; padding-bottom: 12px; border-bottom:2px solid #042961; }
+.main_board .num{ font-weight: bold; color:#1052b5; font-family: 'Noto Sans KR', sans-serif, 'New Gulim'; padding-left: 5px; }
+.main_board .btn_array{ float: right; position: absolute; right: 0; top:22px; }
+.main_board .btn_array li{ float: left; }
+ 
+.btn_array .btn_ar_all{ display: inline-block; position: relative; color: #555; font-size: 13px; background: #fff; border:1px solid #ccc; padding: 8px 10px 8px 26px; letter-spacing: -1px; height: 14px; margin-right: 6px; }
+.btn_array .btn_ar_all:before { content: ""; position: absolute; top: 50%; left: 0; width: 28px; height: 24px; background: url(/ocu/images/icon/ic_ar_all.png) 0 0 no-repeat; transform: translateY(-50%); }
+.btn_array .btn_ar_all_on{ display: inline-block; position: relative; font-size: 13px; background: #a0a9b1 url(/ocu/images/icon/ic_ar_all_on.png) 0 50% no-repeat; color:#fff;  border:1px solid #a0a9b1; padding: 8px 10px 8px 26px; letter-spacing: -1px; height: 14px; margin-right: 6px; }
+.btn_array .btn_ar_area{ display: inline-block; position: relative; color: #555; font-size: 13px; background: #fff; border:1px solid #ccc; padding: 8px 10px 8px 26px; letter-spacing: -1px; height: 14px; }
+.btn_array .btn_ar_area:before { content: ""; position: absolute; top: 50%; left: 0; width: 28px; height: 24px; background: url(/ocu/images/icon/ic_ar_area.png) 0 0 no-repeat; transform: translateY(-50%); }
+.btn_array .btn_ar_area_on{ display: inline-block; position: relative; font-size: 13px; font-weight: bold; background: #a0a9b1 url(/ocu/images/icon/ic_ar_area_on.png) 0 50% no-repeat; color:#fff;  border:1px solid #ccc; padding: 8px 10px 8px 26px; letter-spacing: -1px; height: 14px; }
+.main_board > .list_uv { margin-top: 8px; }
+.main_board > .list_uv span{ margin-right: 2px; color:#fff; font-size: 12px; font-family: '돋움'; padding: 3px 4px 2px 4px; vertical-align:1px; }
+.main_board > .list_uv ul{ width:100%; letter-spacing: -1px;  line-height: 2.2; max-height: 38px; overflow: hidden; }
+.main_board > .list_uv ul>li{ width:184px; float:left; padding: 0 7px; border-right: 1px solid #ddd; }
+.main_board > .list_uv ul>li>a:hover { text-decoration: underline; font-weight: bold; }
+.main_board > .list_uv ul>li:last-child{ border-right: none; }
+.main_board > .list_uv a{ font-size: 16px; letter-spacing: -2px; }
+
+/*대학교 지역별 색상*/
+.main_board .list_uv .area_01 { background: #054887; } /*서울*/
+.main_board .list_uv .area_17 { background: #3ca1d6; } /*세종*/
+.main_board .list_uv .area_08 { background: #108c88; } /*경기*/
+.main_board .list_uv .area_06 { background: #7c73d1; } /*대전*/
+.main_board .list_uv .area_04 { background: #7c60e3; } /*인천*/
+.main_board .list_uv .area_16 { background: #787878; } /*제주*/
+.main_board .list_uv .area_02 { background: #2ea5ac; } /*부산*/
+.main_board .list_uv .area_07 { background: #c955d7; } /*울산*/
+.main_board .list_uv .area_10 { background: #82941e; } /*충북*/
+.main_board .list_uv .area_11 { background: #ff731e; } /*충남*/
+.main_board .list_uv .area_15 { background: #3859c2; } /*경남*/
+.main_board .list_uv .area_03 { background: #328bca; } /*대구*/
+.main_board .list_uv .area_14 { background: #f35151; } /*경북*/
+.main_board .list_uv .area_05 { background: #b43da8; } /*광주*/
+.main_board .list_uv .area_13 { background: #dd44a1; } /*전남*/
+.main_board .list_uv .area_12 { background: #45ae65; } /*전북*/
+.main_board .list_uv .area_09 { background: #a72dbd; } /*강원*/
+

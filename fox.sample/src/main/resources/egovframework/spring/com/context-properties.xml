@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+    <!-- 프로퍼티 정보 설정 -->
+    <bean name="propertiesService" class="egovframework.rte.fdl.property.impl.EgovPropertyServiceImpl" destroy-method="destroy">
+        <property name="properties">
+            <map>
+                <entry key="pageUnit" value="10"/>
+                <entry key="pageSize" value="10"/>
+                <entry key="posblAtchFileSize" value="5242880"/>
+                <entry key="Globals.fileStorePath" value="C:/xproject/KCUE/astdoc/upload"/><!-- 로컬 -->
+                <entry key="Globals.ImagefileStorePath" value="C:/xproject/files/image"/><!-- 로컬 -->
+<!--                 <entry key="Globals.fileStorePath" value="/app/datasource/files/astdoc/"/> 개발 -->
+                <entry key="Globals.navigatorPath" value="/egovframework/navigators/navigators.xml"/>
+                <entry key="eip.fileStorePath" value="eip"/>
+                <entry key="kcu.fileStorePath" value="kcu"/>
+                <entry key="cmn.fileStorePath" value="cmn"/>
+                <entry key="Globals.addedOptions" value="false"/>
+            </map>
+        </property>
+    </bean>
+</beans>    

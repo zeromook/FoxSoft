@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/WEB-INF/jsp">
+
+	<!-- 제외될 패턴 --> 
+    <excludes>
+        <pattern>/index.jsp</pattern>
+        <pattern>*cmm/error/*</pattern>
+        <pattern>/blank.html</pattern>
+        <pattern>*Pop*</pattern>
+       <!--  <pattern>*login*</pattern> -->
+        <pattern>/CQJava/*</pattern>
+        <pattern>/EipEctErrPgeView*</pattern>
+        <pattern>/EipEtcAccesAuthPgeView*</pattern>
+        <pattern>/EipEtcEmgncPgeView*</pattern>
+    </excludes>
+
+<!-- 
+########################################################
+                      KCUE
+########################################################
+-->
+	<decorator name="kcueFmOcu" page="/WEB-INF/jsp/kcue/decorators/kcueSubFmOcu.jsp">
+		<pattern>/*</pattern>
+	</decorator>
+<!-- 
+########################################################
+                      공통
+########################################################
+-->
+	<decorator name="panel" page="kcue/decorators/panel.jsp" />
+
+</decorators>

@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+@font-face {
+ font-family:"malgungothic";
+ src:url('/ocu/fonts/malgun.eot');
+ src:url('/ocu/fonts/malgun.eot?#iefix')
+ format('embedded-opentype'),  url('/ocu/fonts/malgun.woff') format('woff'),  url('/ocu/fonts/malgun.ttf') format('truetype');
+ url('/ocu/fonts/malgun.svg#malgun') format('svg')  src:local(※), url('/ocu/fonts/malgun.woff') format('woff');
+}
+@font-face {
+ font-family:"malgungothicbold";
+ src:url('/ocu/fonts/malgunbold.eot');
+ src:url('/ocu/fonts/malgunbold.eot?#iefix') format('embedded-opentype'),  url('/ocu/fonts/malgunbold.woff') format('woff'),  url('/ocu/fonts/malgunbold.ttf') format('truetype'); url('/ocu/fonts/malgunbold.svg#malgunbold') format('svg')  src:local(※), url('/ocu/fonts/malgunbold.woff') format('woff');
+}
+
+/*********reset**********/
+body {line-height:1;}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { display:block;}
+nav ul {list-style:none;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content:'';content:none;}
+a {margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;cursor:pointer;}
+a {selector-dummy: expression(this.hideFocus=true);} 
+ins {background-color:#ff9;color:#000;text-decoration:none;}
+mark {background-color:#ff9;color:#000; font-style:italic;font-weight:bold;}
+del {text-decoration: line-through;}
+abbr[title], dfn[title] {border-bottom:1px dotted;cursor:help;}
+table {border-collapse:collapse;border-spacing:0;}
+hr {display:block;height:1px;border:0; border-top:1px solid #cccccc;margin:1em 0;padding:0;}
+input, select {vertical-align:middle;}
+h1, h2, h3, h4, h5, h6 { font-weight: normal }
+
+/* Common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table,pre{font-size: 16px; font-family:"맑은 고딕",Malgun Gothic !important; color: #333; }
+img,fieldset{border:0; vertical-align: middle; }
+ul,ol{list-style:none}
+em,address,i{font-style:normal; word-break:break-all; }
+a{text-decoration:none;color: #333;}
+a:hover,a:active,a:focus{text-decoration:none}
+caption,legend,hr{display:none; }
+table,th,td{ border:none; border-spacing:0; border-collapse:collapse; table-layout:fixed}
+textarea:focus, input:focus{ outline: none;}
+textarea{ resize:none; }
+table { table-layout: fixed;width: 100%; border-collapse: collapse; border-spacing: 0; }
+th, td { word-wrap: break-word; word-break: break-all; }
+table th { color: #333; font-size: 16px; }
+table td { color: #555; font-size: 16px; }
+input:focus, textarea:focus, select:focus, option:focus, area:focus { outline:none !important;}
+
+/* Form 요소 */
+input[type="checkbox"], input[type="radio"] {vertical-align: middle;width: 14px;height: 19px; margin: 0 5px 0 10px;}
+input[type="text"], input[type="password"] {height: 20px;border: 1px solid #c3c3c3; padding: 3px 6px 3px 7px; color: #333; font-size: 16px; font-family: "맑은 고딕";/* border-radius: 2px; */}
+input[readonly] { background: #ebebe4; }
+select { height: 28px; border: 1px solid #c3c3c3; color: #333; padding: 1px 3px 2px 10px; font-size: 16px; font-family: "맑은 고딕"; background: #fff url("/ocu/images/btn/btn_nav_arrow.png") no-repeat 96% 50%; -webkit-appearance: none; -moz-appearance: none; -o-appearance: none; appearance: none; }
+select::-ms-expand { /* for IE 11 */  display: none; }
+
+textarea { padding: 4px; color: #777; border: 1px solid #c3c3c3; font-family: "맑은 고딕"; border-radius: 2px; font-size: 16px; }
+
+legend,#skipNavi {
+	position: absolute;
+	overflow: hidden;
+	visibility: hidden;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	z-index: -1
+}
+
+label,button,input[type='button'] {
+	cursor: pointer
+}
+
+fieldset,iframe {
+	border: 0;
+	vertical-align: top
+}
+
+
+/* SkipNavi */
+#SkipNavi li a{position:absolute; top:0px; left:-900px;}
+#SkipNavi li a:focus { position:static; background:#333; color:#fff; text-align:center; display:block; padding:10px;font-size:30px;}
+
+/* 접근성 */
+.skip { display: block; position: absolute; left: -9999px; text-indent: 9999px; width: 0; height: 0; border: 0; overflow: hidden; font-size: 0; line-height: 0; white-space: nowrap } 
+
+/*이미지대체텍스트*/
+.ir_pm{display: block; position: absolute; left: -9999px; text-indent: 9999px; width: 0; height: 0; border: 0; overflow: hidden; font-size: 0; line-height: 0; white-space: nowrap}
+.ellipsis{ text-overflow:ellipsis; overflow: hidden; white-space: nowrap; }
+
+/* list-style */
+ol.n { list-style:decimal; padding-left: 18px; } /*숫자 표기*/
+ol.bl { list-style:disc; padding-left: 18px; } /*원 표기*/
+
+/*percent*/
+.w100{width: 100% !important;}
+.w99{width: 99%;}
+.w98{width: 98%;}
+.w95{width: 95%;}
+.w95{width: 95%;}
+.w90{width: 90%;}
+.w88{width: 88%;}
+.w87{width: 87%;}
+.w85{width: 85%;}
+.w80{width: 80%;}
+.w75{width: 75%;}
+.w70{width: 70%;}
+.w68{width: 68%;}
+.w65{width: 65%;}
+.w60{width: 60%;}
+.w55{width: 55%;}
+.w50{width: 50%;}
+.w45{width: 45%;}
+.w40{width: 40%;}
+.w38{width: 38%;}
+.w35{width: 35%;}
+.w30{width: 30%;}
+.w25{width: 25%;}
+.w20{width: 20%;}
+.w10{width: 10%;}
+.w5{width: 5%;}
+
+.mT10{margin-top: 10px;}
+.mT20{margin-top: 20px;}
+.mL5{margin-left: 5px;}
+.mR0{margin-right: 0 !important;}
+
+/* text */
+.tL{ text-align: left !important; }
+.tC{ text-align: center !important; }
+.tR{ text-align: right !important; }
+.txtB { font-weight: bold; }
+
+/* txt color */
+.txt_blue { color: #0072bc; }
+.txt_red { color: #c41425 !important; }
+.txt_gray { color: #777; }
+
+

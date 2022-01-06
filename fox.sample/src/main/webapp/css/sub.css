@@ -1,0 +1,342 @@
+/*container*/
+.content_wrap{ width: 100%; position: relative; }
+
+/* 서브페이지 상단 네비게이션 */
+.nav { width: 100%; line-height:50px; height: 50px; border-bottom: 1px solid #ddd; }
+.nav .nav_bar{ width: 1200px; margin: 0 auto; position: relative; }
+.nav .nav_bar h2{ float: left; }
+.nav .nav_bar > h2 > a{ text-indent:-9999em; overflow: hidden; color:#fff; width:52px; height: 50px; background: #032250 url('/ocu/images/icon/ic_home.png') 52% 50% no-repeat; display: block; }
+.nav .nav_bar ul{ width:260px; margin:0; padding:0; float: left; background: #fff; z-index: 100; }
+.nav .nav_bar ul.menu > li{ position:relative; float:left; width:100%; list-style-type:none; font-size:16px; }
+.nav .nav_bar ul.menu li a{ display:block; text-indent:30px; color:#000; font-weight:bold; text-decoration:none; }
+.nav .nav_bar ul.menu .tit { border-right: 1px solid #ddd; }
+.nav .nav_bar ul.menu .tit:after{ content: ""; position: absolute; top: 25px; right: 15px; width: 14px; height: 9px; background: url('/ocu/images/btn/btn_nav_arrow.png') 0 0 no-repeat; transform: translateY(-50%); }
+.nav .nav_bar ul.menu .sub01 { border: 1px solid #ddd; width:258px; display: none; }
+.nav .nav_bar ul.menu .sub02 { border: 1px solid #ddd; width:259px; margin-left:-1px; display: none; }
+.nav .nav_bar ul.menu li .sub01 a, .nav ul.menu li .sub02 a{ font-size: 15px; font-weight: normal; }
+.nav .nav_bar ul.menu li .sub01 a:hover, .nav ul.menu li .sub02 a:hover{ background: #042961; color:#fff; }
+.nav .nav_bar ul.menu li .tit:hover{ background:#f8f8f8; }
+.menuBox01{ position: absolute; left: 52px; }
+.menuBox02{ position: absolute; left: 312px; }
+
+/* 컨텐츠 내용 */
+.content_wrap_inner{ width: 1200px; margin: 0 auto; }
+.content_top{ margin-top: 40px; position:relative; }
+.content_top h1{ font-size: 38px; font-weight: bold; color:#333; padding-bottom: 14px; margin-bottom: 14px; border-bottom: 2px solid #666; font-family: 'Noto Sans KR', sans-serif, 'New Gulim'; letter-spacing: -1px; }
+.content_top .mainGo { position: absolute; top:10px; right: 0; }
+.content_top .mainGo a{ padding:7px 30px 7px 30px; font-size: 18px; font-weight: bold; border:1px solid #c4cfdf; background:#f4f8ff url("/ocu/images/btn/btn_arrow_gr.gif") 88% 50% no-repeat;  }
+.content_top .mainGo a:hover{ background:#dce6f5 url("/ocu/images/btn/btn_arrow_gr.gif") 88% 50% no-repeat;  }
+.content_top .conSub{ border-bottom: 0; }
+.content_top > .search_box{ padding: 20px 34px; background: #f6f9fd; border:1px solid #ddd; margin-bottom: 30px; }
+.list_search_box{ text-align: center; }
+.list_search_box select{ width:140px; height: 42px; }
+.list_search_box input{ width:400px; height: 34px; line-height: 34px; padding-left: 10px; margin-left: 5px; font-size: 16px; }
+.list_search_box button{ width: 90px; height: 42px; margin-left: 5px; line-height: 42px; border: none;
+    color: #fff; background: #333; vertical-align:middle; font-size:16px; }
+.list_search_box button:hover { background: #222; }
+
+.content{ position: relative; min-height:480px; }
+.content h2{font-size: 24px; font-weight: bold; color:#333; margin-bottom:14px; }
+.content .con_default{ width:100%; text-align: center; padding-top: 70px; }
+.content .con_default{ width:100%; text-align: center; padding-top: 70px; }
+.content .con_default h2{ font-size: 30px; font-weight: bold; margin-bottom: 40px; }
+.content .con_default h2 span{ background: url('/ocu/images/img/bg_highlight.gif') 0 100% repeat-x; }
+.content .con_default h3{ font-size: 20px; margin-top: 50px; }
+.list_top{ margin-bottom: 16px; }
+.list_top .list_ct{ font-size: 16px;}
+.list_top .list_ct .num { font-weight: bold; color: #1052b5; font-family: 'Noto Sans KR', sans-serif, 'New Gulim'; padding-left: 5px;}
+.list_top .list_num{ float: right; position: absolute; top:-10px; right: 0; width:150px; height: 34px; }
+
+/* 게시판 */
+.tbl_list{ display: inline-block; width: 100%; }
+.tbl_list table { border-top: 2px solid #000; letter-spacing: 0; }
+.tbl_list tr{ border-bottom: 1px solid #ddd; }
+.tbl_list tr.tr_notice{ background: #f9f9f9; }
+.tbl_list th{ background: #f6f9fd; padding: 15px 0; border-right: 1px solid #ddd; }
+.tbl_list th:last-child{ border-right: none; }
+.tbl_list td{ height: 32px; line-height:20px; padding: 8px 5px; text-align: center; border-right: 1px solid #ddd; }
+.tbl_list td:last-child{ border-right: none; }
+.tbl_list td.tt{ text-align: left; padding-left: 12px; }
+.tbl_list .notice{ background: #333; padding: 0 10px 1px 10px;color: #fff; border-radius: 10px; font-weight: bold; }
+.tbl_list a.tt{ max-width: 88%; display: inline-block; font-weight: bold; vertical-align:-3px; padding-left: 12px; }
+.tbl_list a:hover{ text-decoration: underline; }
+.tbl_list .ic_dw{ margin: -5px 0 0 5px;}
+
+/* 게시판 상세 스타일 */
+.list_view{ border-top: 2px solid #000; border-bottom: 1px solid #000; }
+.list_view tr { border-bottom: 1px solid #cbcfdd; }
+.list_view tr:last-child{ border-bottom: none; }
+.list_view th { padding: 15px 0; background: #fbfbfb; border-left: 1px solid #ddd; border-right: 1px solid #ddd; }
+.list_view th:nth-child(1){ border-left: none; }
+.list_view .view_tt { text-align: left; padding: 5px 16px; border-right: none; font-weight: bold; line-height:24px; color:#000; }
+.list_view td { padding: 6px 15px; letter-spacing: 0; height: 38px; }
+
+.list_view .con{ padding: 20px 25px; line-height: 30px; }
+.list_view .con_write{ padding: 5px 15px; line-height: 24px; }
+.add_file p { padding: 6px 0; }
+.add_file p a{ color: #1465ad; }
+.add_file p a:hover{ text-decoration: underline; }
+.add_file .add{ margin-right: 5px; vertical-align: -2px; }
+.list_bottom_btn{ width: 100%; display: inline-block; text-align: right; margin-top: 14px; }
+.list_bottom_btn button{ width: 90px; height: 42px; line-height: 42px; border: none; color: #fff;
+    background: #394b61; vertical-align: middle; font-size: 16px; }
+.list_bottom_btn button:hover{ background: #2a3b50; }
+
+/* 게시판 뷰 하단 이전,다음페이지 */
+.prev_next_bottom{ clear: both; position: relative; padding-top: 30px;font-size: 15px;color: #6c6c6c;}
+.join_title_box{clear: both;}
+.prev_next_bottom ul li{ border-top: 1px solid #d9d9d9; border-bottom: 1px solid #d9d9d9; padding:17px 15px 17px 30px; background: #fafafa; }
+.prev_next_bottom ul li:first-child{border-bottom: none; }
+.prev_next_bottom ul li a{color: #6c6c6c; }
+.prev_next_bottom ul li a:hover{text-decoration: underline; }
+.prev_next_bottom ul li img{ vertical-align: 3px; }
+.list_quick_btn{ padding: 0 40px 0 10px; font-weight: bold; color: #333; }
+
+/* 상담소개 */
+.info_box{ display: inline-block; width: 100%; height: 970px; line-height: 42px; font-size: 20px;  background: url("/ocu/images/img/bg_infopage.jpg") 0 0 no-repeat; font-family: 'Noto Sans KR', sans-serif, 'New Gulim'; }
+.info_box h2{ font-size: 38px; font-weight: bold; margin:60px 220px 86px 0; line-height: 54px; text-align: center;  }
+.info_box h2 .hl01{ color:#2069ba; }
+.info_box h2 .hl02{ color:#ed8b21; }
+.info_box ul{ margin:94px 0 0 200px; display: inline-block; }
+.info_box ul li{ line-height: 40px; margin-bottom: 34px; }
+.info_box ul li.line{ text-decoration: underline; font-weight: bold; }
+.info_box ul li .hl01{ font-size: 24px; font-weight: bold; color:#000; }
+.info_box ul li .hl02{ font-size: 24px; font-weight: bold; color:#2858a8; }
+.info_box ul li .hl03{ font-size: 24px; font-weight: bold; color:#12c8ac; }
+
+
+/* 대학정보 */
+.search_uvlist{ text-align: left; }
+.search_uvlist .uv_name{ width:400px; height: 42px; margin-left: 5px; }
+.uv_listPage{ margin-top: 30px; display:inline-block; width:100%; font-size: 20px; }
+.uv_listPage .uv_name_tt{ float: left; color:#000; font-size: 30px; font-weight: bold; margin-right:20px; margin-bottom:0; }
+.uv_listPage span{ margin-top: 10px; vertical-align: -7px; }
+.uv_listPage .btn_top{ float: right; margin-top:-3px; font-weight:normal; }
+.uv_listPage .btn_homeP01{ display: inline-block; position: relative; color: #fff;
+    font-size: 16px; background: #2a6cd8; padding: 9px 42px 7px 24px; letter-spacing: -1px; height: 20px; border: none; vertical-align: middle; }
+.uv_listPage .btn_homeP01:hover { background:#1655ba; }
+.uv_listPage .btn_homeP01:after{ content: ""; position: absolute; top: 50%; right: 10px; width: 20px;
+    height: 12px; background: url('/ocu/images/btn/btn_go.png') 0 0 no-repeat; transform: translateY(-50%); }
+.uv_listPage .btn_homeP02{ display: inline-block; position: relative; color: #fff;
+    font-size: 16px; background: #ff8400; padding: 9px 42px 7px 24px; letter-spacing: -1px; height: 20px; border: none; vertical-align: middle; }
+.uv_listPage .btn_homeP02:hover { background: #ff6600; }
+.uv_listPage .btn_homeP02:after{ content: ""; position: absolute; top: 50%; right: 10px; width: 20px;
+    height: 12px; background: url('/ocu/images/btn/btn_go.png') 0 0 no-repeat; transform: translateY(-50%);}
+.uv_deBox{ height:132px; margin-top: 14px; border:2px solid #ddd; padding:18px 22px;}
+.uv_deBox .uv_logo{ width: 110px; height: 110px; padding:10px; border:1px solid #ddd; float: left; text-align:center;  vertical-align: middle; }
+.uv_deBox .uv_logo img{ width:110px; height: 110px; object-fit:contain; }
+.uv_deBox .uv_de{ margin-left: 45px; float: left;}
+.uv_deBox .uv_de .tt{ margin:12px 0 6px 0; font-size: 20px; color:#333; }
+.uv_deBox .uv_de .tt .tt01{ font-weight: bold; }
+.uv_deBox .uv_de .tt .tt02{ font-size: 18px; margin-left: 16px; }
+.uv_deBox .uv_de li{ color:#555; font-size: 16px; line-height: 34px; }
+.uv_deBox .uv_de .tt_b{ font-weight: bold; padding-left: 15px; margin-right: 10px; background: url("/ocu/images/bl/bl_gray.gif") 5px center no-repeat; }
+.uv_deBox .uv_de p { float: left; }
+.uv_deBox .uv_de .fax{ margin-left: 20px;}
+.uv_deBox .sns{ float: right;}
+.uv_deBox .sns li{ float: left; margin-left: 7px;}
+
+/* 대학 동영상*/
+.uv_video{ display:inline-block; width:100%; margin-top: 16px;}
+.uv_video .video_box{ position: relative; float: left; text-align:center; }
+.uv_video .video_box .video{ border:2px solid #ddd; width:900px; height: 500px; }
+.uv_video .video_box .video .btn_play{ position: absolute; left:43%; top:32%; }
+.uv_video .video_box .video_more{ display: inline-block; position: relative; color: #333;
+    font-size: 16px; font-weight: bold; background: #e7ecf6; border:1px solid #c0c9db; padding: 14px 34px 10px 56px; letter-spacing: -1px; height: 20px; vertical-align: middle; margin-top: 10px; border-radius:30px; }
+.uv_video .video_box .video_more:before{ content: ""; position: absolute; top: 48%; left: 18px; width: 32px; height: 32px; background: url('/ocu/images/icon/ic_video.gif') 0 0 no-repeat; transform: translateY(-50%);}
+.uv_video .video_box .video_more:after{ content: ""; position: absolute; top: 50%; right: 18px; width: 6px; height: 11px; background: url('/ocu/images/btn/btn_arrow_gr.gif') 0 0 no-repeat; transform: translateY(-50%);}
+.uv_video .video_box .video_more:hover{ text-decoration: underline; }
+.uv_video .uv_info_bn{ float: right; width:280px; border-top: 1px dashed #ccc; }
+.uv_video .uv_info_bn li{ border-bottom: 1px dashed #ccc; padding:30px 0 30px 25px; height: 106px; }
+.uv_video .uv_info_bn h3{ font-size: 20px; font-weight: bold; line-height: 28px; margin-bottom: 16px; letter-spacing:-1px; }
+.uv_video .uv_info_bn h3.num{ margin-bottom: 5px;}
+.uv_video .uv_info_bn h4{ color:#6886b6; font-size: 20px; font-weight: bold; margin-bottom: 6px; width:184px; }
+.uv_video .uv_info_bn .btn_infoGo{ display: inline-block; position: relative; color: #fff; font-size: 15px; background: #042961; padding: 8px 32px 6px 14px; letter-spacing: -1px; height: 16px; border: none; vertical-align: middle; }
+.uv_video .uv_info_bn .btn_infoGo:after{ content: ""; position: absolute; top: 50%; right: 6px; width: 20px; height: 12px; background: url("/ocu/images/btn/btn_go.png") 0 0 no-repeat; transform: translateY(-50%); }
+.uv_video .uv_info_bn .btn_infoGo:hover { background: #012152; }
+.uv_video .uv_info_bn p{ line-height: 20px; color:#555; letter-spacing: -1px; display: block; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; width:230px; max-height: 42px; }
+.uv_video .uv_info_bn .bn01{ background: url("/ocu/images/icon/ic_info01.gif") 95% 25% no-repeat; }
+.uv_video .uv_info_bn .bn02{ background: url("/ocu/images/icon/ic_info02.gif") 95% 25% no-repeat; }
+.uv_video .uv_info_bn .bn03{ background: url("/ocu/images/icon/ic_info03.gif") 95% 25% no-repeat; }
+
+.uv_btBN{ display:inline-block; margin-top: 70px; }
+.uv_btBN li{ float: left; font-size: 18px; }
+.uv_btBN li a{ padding: 20px 10px 20px 20px; border:1px solid #ddd; margin-left: -1px; width:208px; height: 30px; line-height: 30px; display: block; background: url("/ocu/images/btn/btn_arrow_c.gif") 94% 50% no-repeat; font-weight: 400; }
+.uv_btBN li a:hover{ background: #fafafa url("/ocu/images/btn/btn_arrow_c.gif") 94% 50% no-repeat; }
+
+.recruit_down{ display:inline-block; margin-top: 70px; }
+.recruit_down h3{ font-size: 26px; font-weight: bold; color:#333; background: url("/ocu/images/btn/ic_download_t.gif") 226px 50% no-repeat; padding-right:50px; margin-bottom: 26px; }
+.recruit_down .bn_dw{ position: relative; display: inline-block; letter-spacing: -1px; }
+.recruit_down .bn_dw li{ float: left; font-size: 16px; border:1px solid #ddd; border-radius:40px; margin-left:10px; background: #f7f8fa; position:relative; }
+.recruit_down .bn_dw li:hover{ background: #ecf0f6; border:1px solid #cdd8e8; }
+.recruit_down .bn_dw li a{ padding: 14px 5px 14px 84px; width:140px; height: 42px; line-height: 22px; display: inline-block; }
+.recruit_down .bn_dw li:first-child{ margin-left:0; }
+/* 활성 */
+.recruit_down .bn_dw .dw01:before{ content: ""; position: absolute; top: 50%; left: 30px; width: 36px; height: 36px; background: url("/ocu/images/icon/ic_down01.png") 0 0 no-repeat; transform: translateY(-50%); }
+.recruit_down .bn_dw .dw02:before{ content: ""; position: absolute; top: 50%; left: 30px; width: 36px; height: 36px; background: url("/ocu/images/icon/ic_down02.png") 0 0 no-repeat; transform: translateY(-50%); }
+.recruit_down .bn_dw .dw03:before{ content: ""; position: absolute; top: 50%; left: 30px; width: 36px; height: 36px; background: url("/ocu/images/icon/ic_down03.png") 0 0 no-repeat; transform: translateY(-50%); }
+.recruit_down .bn_dw .dw04:before{ content: ""; position: absolute; top: 50%; left: 30px; width: 36px; height: 36px; background: url("/ocu/images/icon/ic_down04.png") 0 0 no-repeat; transform: translateY(-50%); }
+.recruit_down .bn_dw .dw05:before{ content: ""; position: absolute; top: 50%; left: 30px; width: 36px; height: 36px; background: url("/ocu/images/icon/ic_down05.png") 0 0 no-repeat; transform: translateY(-50%); }
+/* 비활성 */
+.recruit_down .bn_dw .dw01_inact, .recruit_down .bn_dw .dw02_inact, .recruit_down .bn_dw .dw03_inact, .recruit_down .bn_dw .dw04_inact, .recruit_down .bn_dw .dw05_inact {color:#888;}
+.recruit_down .bn_dw .dw01_inact:before{ content: ""; position: absolute; top: 50%; left: 30px; width: 36px; height: 36px; background: url("/ocu/images/icon/ic_down01_inact.png") 0 0 no-repeat; transform: translateY(-50%); }
+.recruit_down .bn_dw .dw02_inact:before{ content: ""; position: absolute; top: 50%; left: 30px; width: 36px; height: 36px; background: url("/ocu/images/icon/ic_down02_inact.png") 0 0 no-repeat; transform: translateY(-50%); }
+.recruit_down .bn_dw .dw03_inact:before{ content: ""; position: absolute; top: 50%; left: 30px; width: 36px; height: 36px; background: url("/ocu/images/icon/ic_down03_inact.png") 0 0 no-repeat; transform: translateY(-50%); }
+.recruit_down .bn_dw .dw04_inact:before{ content: ""; position: absolute; top: 50%; left: 30px; width: 36px; height: 36px; background: url("/ocu/images/icon/ic_down04_inact.png") 0 0 no-repeat; transform: translateY(-50%); }
+.recruit_down .bn_dw .dw05_inact:before{ content: ""; position: absolute; top: 50%; left: 30px; width: 36px; height: 36px; background: url("/ocu/images/icon/ic_down05_inact.png") 0 0 no-repeat; transform: translateY(-50%); }
+
+
+/* 대학별 입학상담 */
+.note_box { padding:24px 40px; border:1px solid #ddd; line-height: 1.6; }
+.note_box h3{ font-weight: bold; font-size: 18px; margin-bottom: 10px; padding-left: 36px; background: url("/ocu/images/icon/ic_info.gif") left 50% no-repeat; }
+.note_box ul{ padding-left: 36px; }
+.note_box ul li{ padding-left: 16px; }
+.note_box .h4{ font-size: 15px; font-weight: bold; margin: 10px 0 2px 0; background: url("/ocu/images/icon/bl_sp.gif") left 50% no-repeat; }
+.note_box .sm{ background: url("/ocu/images/bl/bl_gray.gif") 32px 50% no-repeat; padding-left: 42px; }
+.note_box .nt_po{ background: url("/ocu/images/bl/bl_red.gif") 3px 50% no-repeat; color:#ff0000; }
+
+.consult_list_app{ margin-bottom: 30px; }
+.consult_list_app .list_box{ width:100%; margin-top: 30px; display:inline-block; position: relative; }
+.consult_list_app h3{ margin:10px 0; font-size: 22px; font-weight: bold; }
+.consult_list_app h3 span{ color:#ef0000; font-weight: normal; margin-left: 10px; font-size: 18px; vertical-align:2px; }
+.consult_list_app .h3_es{ font-size: 16px; font-weight: normal; padding-left: 16px; background: url("/ocu/images/icon/ic_essential.gif") left 50% no-repeat; width:100%; float: left; }
+.consult_list_app th{ text-align: left; padding-left: 40px; background: #fbfbfb; }
+.consult_list_app th.ess{ text-align: left; padding-left: 40px; background: #fbfbfb url("/ocu/images/icon/ic_essential.gif") 22px 50% no-repeat; }
+.consult_list_app .list_app{ }
+.consult_list_app .list_app select{ height: 38px; }
+.consult_list_app .list_app input{ height: 30px; }
+.consult_list_app .list_app .flatbtn{ padding: 9px 15px; margin-left:3px; border: none; color: #fff; background: #394b61; vertical-align: middle; font-size: 15px; text-align: center; }
+.consult_list_app .tbl_topBt{ float: right; position: absolute; top:-8px; right: 0; }
+.consult_list_app .tbl_topBt button{ width: 90px; height: 38px; margin-left:3px; line-height: 38px; border: none; color: #fff; background: #ff9800; vertical-align: middle; font-size: 15px; }
+.consult_list_app .tbl_topTxt{ float: left; margin: 8px 0 10px 0; line-height: 1.5; color:#555; }
+.consult_list_app .tbl_topTxt_r{ float: left; margin-top:12px; line-height: 1.5; color:#ef0000; font-size:17px; }
+.consult_list_app .tbl_topTxt_r_mb0{ float: left; margin:12px 0 -15px 0; line-height: 1.5; color:#ef0000; font-size:17px; }
+.consult_list_app .tbl_btTxt{ float: left; margin-top: 12px; line-height: 1.5; color:#ef0000; }
+.consult_list_app .tbl_btTxt .go{ font-weight: bold; text-decoration: underline; color:#003483; }
+.consult_list_app .listbtBT{ margin-top:20px; float:right; }
+.consult_list_app .listbtBT .bt_save{ width: 90px; height: 38px; margin-left:3px; line-height: 38px; border: none; color: #fff; background: #003483; vertical-align: middle; font-size: 15px; }
+.consult_list_app .listbtBT .bt_cancle{ width: 90px; height: 38px; margin-left:3px; line-height: 38px; border: none; color: #fff; background: #999; vertical-align: middle; font-size: 15px; }
+.consult_list_app .listbtBT .bt_cancle01{ width: 90px; height: 38px; margin-left:3px; line-height: 38px; border: none; color: #fff; background: #ff9800; vertical-align: middle; font-size: 15px; }
+.consult_list_app .listbtBT .bt_del{ width: 90px; height: 38px; margin-left:3px; line-height: 38px; border: none; color: #fff; background: #888; vertical-align: middle; font-size: 15px; }
+.consult_list_app .listbtBT .bt_list{ width: 90px; height: 38px; position: absolute; left: 0; line-height: 38px; border: none; color: #fff; background: #394b61; vertical-align: middle; font-size: 15px; }
+
+#divGrade_btn{ float: right; top:-3px; right: 0; position: absolute; }
+#divGrade_btn .btnFold{ position: absolute; top:3px; right: 0; height: 38px; padding: 0 20px 0 40px; line-height: 34px; border: none; color: #fff; background: #46aae4 url("/ocu/images/btn/btn_arrow_fold.png") 12px 50% no-repeat; vertical-align: middle; font-size: 15px; }/*접기*/
+#divGrade_btn .btnOpen{ position: absolute; top:3px; right: 0; height: 38px; padding: 0 11px 0 34px; line-height: 34px; border: none; color: #fff; background: #46aae4 url("/ocu/images/btn/btn_arrow_open.png") 12px 50% no-repeat; vertical-align: middle; font-size: 15px; display: none; }/*펼치기*/
+
+#divScore_btn{ float: right; top:-3px; right: 0; position: absolute; }
+#divScore_btn .btnFold{ position: absolute; top:3px; right: 0; height: 38px; padding: 0 20px 0 40px; line-height: 34px; border: none; color: #fff; background: #46aae4 url("/ocu/images/btn/btn_arrow_fold.png") 12px 50% no-repeat; vertical-align: middle; font-size: 15px; }/*접기*/
+#divScore_btn .btnOpen{ position: absolute; top:3px; right: 0; height: 38px; padding: 0 11px 0 34px; line-height: 34px; border: none; color: #fff; background: #46aae4 url("/ocu/images/btn/btn_arrow_open.png") 12px 50% no-repeat; vertical-align: middle; font-size: 15px; display: none; }/*펼치기*/
+
+.app_com_wrap{ margin-top:50px; padding:70px 0  70px 360px; border-top:2px solid #333; border-bottom:1px solid #333; background: url("/ocu/images/img/img_appcom.gif") 76px 50% no-repeat; }
+.app_com_wrap p{ line-height: 40px; font-size: 17px; }
+.app_com_wrap p:last-child{ margin-top: 20px; }
+.app_com_wrap span{ font-weight: bold; color:#ff7000; }
+.app_com_btn { margin-top: 30px; text-align: center; width:100%; display: inline-block; }
+.app_com_btn .bt_main{ width: 90px; height: 38px; line-height: 38px; border: none; color: #fff; background: #003483; vertical-align: middle; font-size: 15px; }
+.app_com_btn .bt_conlist{ padding:0 20px; height: 38px; margin-left:10px; line-height: 38px; border: none; color: #fff; background: #ff9800; vertical-align: middle; font-size: 15px; }
+
+/* 게시판 상세 - th col 정렬 */
+.consult_list_app .list_div { }
+.consult_list_app .list_view_c{ border-top: 2px solid #000; border-bottom: 1px solid #000; }
+/*
+.consult_list_app .list_view_c tr { border-bottom: 1px solid #cbcfdd; }
+.consult_list_app .list_view_c tr:last-child{ border-bottom: none; }
+*/
+.consult_list_app .list_view_c th { padding: 5px 0; height: 30px; background: #fbfbfb; border-bottom: 1px solid #ddd; border-bottom: 1px solid #ddd; text-align: center; }
+.consult_list_app .list_view_c th + th { border-left: 1px solid #ddd; } 
+.consult_list_app .list_view_c tr.tr_bg{ background: #fbfbfb; } 
+.consult_list_app .list_view_c td { border-top: 1px solid #ddd; padding: 6px 5px; letter-spacing: 0; text-align: center; height: 38px; }
+.consult_list_app .list_view_c td + td { border-left: 1px solid #ddd; }
+
+.consult_list_app .list_view_c select{ height: 38px; }
+.consult_list_app .list_view_c input{ height: 30px; }
+.consult_list_app .tbl_bottomBt{ float: right; margin-top: 7px; }
+.consult_list_app .tbl_bottomBt button{ width: 90px; height: 38px; margin-left:3px; line-height: 38px; border: none; color: #fff; background: #ff9800; vertical-align: middle; font-size: 15px; }
+.consult_list_app .list_view_c .tblCan{ width: 56px; height: 30px; line-height: 30px; border: none; color: #fff; background: #394b61; vertical-align: middle; font-size: 15px; }
+.consult_list_app .list_view_c .tblDel{ width: 56px; height: 30px; margin-left:3px;  line-height: 30px; border: none; color: #fff; background: #394b61; vertical-align: middle; font-size: 15px; }
+.borLf{ border-left: 1px solid #ddd; }
+.consult_list_app .add_box{ margin-top:10px; padding-bottom: 10px; border-bottom: 1px solid #ddd; }
+.consult_list_app .add_box button{ width:100%; height: 40px; line-height: 40px; color: #333; background: #f0f4fa; border:1px solid #ddd; vertical-align: middle; font-size: 15px; font-weight: bold; position: relative; }
+.consult_list_app .add_box button:after{ content: ""; position: absolute; top: 52%; right: 46%; width: 10px; height: 10px; background: url("/ocu/images/btn/btn_add.png") 0 0 no-repeat; transform: translateY(-50%); }
+.consult_list_app .list_box .textArea_box{ border-top: 2px solid #000; border-bottom: 1px solid #000; padding:8px 5px; }
+.consult_list_app .list_box .textArea_box textarea{ width:98%; padding:10px; }
+.consult_list_app .list_box .tbl_topSlec{ float: right; margin-top:5px; }
+.consult_list_app .list_box .tbl_topSlec button{ width: 56px; height: 30px; line-height: 30px; border: none; color: #fff; background: #394b61; vertical-align: middle; font-size: 15px; }
+.consult_list_app .list_box .tbl_topSlec select{ width:300px; height:30px; font-size: 14px;  }
+.consult_list_app .list_view_c input[type="radio"]{ vertical-align: -9px; }
+
+.consult_list_app .list_box .tbl_topSlec01{ float: right; position: absolute; top:-4px; right: 0; }
+.consult_list_app .list_box .tbl_topSlec01 button{ width: 56px; height: 30px; line-height: 30px; border: none; color: #fff; background: #394b61; vertical-align: middle; font-size: 15px; }
+.consult_list_app .list_box .tbl_topSlec01 select{ width:300px; height:30px; font-size: 14px;  }
+.consult_list_app .list_view_c input[type="radio"]{ vertical-align: -9px; }
+
+td.uvName{ border-right:none; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; text-align: left; padding-left: 12px; }
+.uvgo{ padding:3px 4px 4px 4px; line-height: 30px; border: none; color: #fff; background: #a3c6f0; border:1px solid #ddd; vertical-align: middle; font-size: 13px; letter-spacing: -1px; }
+.ct_app{ padding:3px 8px 4px 8px; line-height: 30px; border: none; color: #fff; background: #ff9800; vertical-align: middle; font-size: 14px; letter-spacing: -1px;}
+.ct_com{ padding:3px 8px 4px 8px; line-height: 30px; border: none; color: #fff; background: #042961; vertical-align: middle; font-size: 14px; letter-spacing: -1px;}
+.ct_can{ padding:3px 8px 4px 8px; line-height: 30px; border: none; color: #fff; background: #888; vertical-align: middle; font-size: 14px; letter-spacing: -1px; }
+
+.app_con{ line-height:30px; }
+.app_con span{ font-weight: bold; }
+.tbl_box_f{ float: left; width:280px !important; margin-left: 0 !important; }
+.tbl_box_wrap{ float: left; margin-left: 40px; width:420px; }
+.tbl_box_wrap h4{ margin: 20px 0 10px 0; color:#4475bf; font-weight: bold; font-size: 18px; background: url("/ocu/images/bl/bl_blue_modal.png") no-repeat left 50%; padding-left: 20px; }
+.tbl_box_wrap th{ height: 38px !important; }
+.que_con{ border-top:2px solid #000; border-bottom: 1px solid #000; padding:10px 15px; line-height: 30px; }
+.que_con .top{ margin-bottom: 10px; }
+.consult_list_app .que_con .name{ font-weight: bold; margin-right: 30px; padding-right:60px; color:#4475bf; border-right: 1px solid #ddd; font-size: 15px;  }
+.consult_list_app h4{margin: 20px 0 10px 0; font-weight:bold; }
+
+/*대학별 화상상담신청*/
+.uv_nameBox{ padding: 28px 34px; background: #f6f9fd; border: 1px solid #ddd; margin-top: 14px; font-size: 22px; font-weight: bold; color:#042961; }
+.info_tt{ font-weight: bold; font-size: 16px; color:#ef0000; }
+.list_VideoApp{ margin:20px 0; display: inline-block; }
+.consult_list_app .tbl_bottomBt_app{ width:100%; text-align: center; margin:15px 0 30px 0; }
+.consult_list_app .tbl_bottomBt_app button { width: 90px; height: 38px; margin-left: 3px; line-height: 38px; border: none; color: #fff; background:#003483; vertical-align: middle; font-size: 15px; }
+.resStep_wrap{ margin-top: 30px;  }
+.step_info { width:100%; margin-bottom:14px; display:inline-block;}
+.step_info h3{ font-size: 20px; font-weight: bold; } 
+.stepBox_info{ margin-top: 10px; width:100%; display: inline-block; font-size: 16px; color:#555; background: url("/ocu/images/bl/bl_arrow_step.gif") 382px 50% no-repeat; }
+.stepBox_info li{ float: left; border:1px solid #ddd; border-radius: 60px; margin-left: 68px; padding:14px 15px 14px 86px; width:250px; }
+.stepBox_info li:nth-child(1){ margin-left: 0; }
+.stepBox_info li span{ display: block; text-align: center; line-height: 30px; letter-spacing: -1px; }
+.stepBox_info li span.tt{ font-size: 20px; font-weight: bold; color:#042961; letter-spacing: 0; font-family: 'Noto Sans KR', sans-serif, 'New Gulim'; }
+.stepBox_info li.step01{ background: #f6f9fd url("/ocu/images/icon/ic_step01.png") 38px 50% no-repeat; }
+.stepBox_info li.step02{ background: #f6f9fd url("/ocu/images/icon/ic_step02.png") 38px 50% no-repeat; }
+.stepBox_info li.step03{ background: #f6f9fd url("/ocu/images/icon/ic_step03.png") 38px 50% no-repeat; }
+.stepBox{ margin-top: 40px;}
+.stepBox .step01 { width:45%; float: left; }
+.stepBox .step01 h2, .stepBox .step02 h2 { margin-bottom: 16px;}
+.stepBox .step01 h2 span, .stepBox .step02 h2 span{ font-weight: bold; color: #fff; background:#042961; letter-spacing: 1px; font-family: 'Noto Sans KR', sans-serif, 'New Gulim'; margin:0 10px 0 0; padding:1px 10px 3px 10px; }
+.stepBox .step02 { width:45%; float: right; }
+.stepBox .step02 span.dateTop{ background: #fff; float: right; color:#333; margin-right:0; letter-spacing: 0; font-size:20px; color:#4475bf; position: relative; }
+.stepBox .step02 span.dateTop:before{ content: ""; position: absolute; top: 50%; left: -35px; width: 38px; height: 30px; background: url("/ocu/images/icon/ic_date.gif") 0 0 no-repeat; transform: translateY(-50%);}
+.stepBox tr.on{ background: #fff4f4; }
+.list_box h2.h2_step03{ margin-bottom: 16px; font-size: 24px; font-weight: bold; color: #333; margin: 30px 0 20px 0; }
+.list_box h2.h2_step03 span { font-weight: bold; color: #fff; background: #042961; letter-spacing: 1px; font-family: 'Noto Sans KR', sans-serif, 'New Gulim'; margin: 0 10px 0 0; padding: 1px 10px 3px 10px; }
+.agree_box{ margin-top: 20px; border:1px solid #ddd; padding: 30px 40px; text-align: center;}
+.agree_box h4{ font-size: 22px; font-weight: bold; margin:0 0 14px 0; }
+.agree_box p{ line-height: 30px; font-size: 16px; color:#555; }
+.agree_box .agree_txt{ font-weight: bold; color:#1f73f2; margin:5px 0 12px 0; font-size: 17px; }
+.agree_box .agree_txt input {vertical-align:-4px;}
+.agree_box span{ font-size: 15px; text-align: left; margin-left: 30px;}
+
+/* border */
+.bor_ra{ border-right: 1px solid #ddd !important; }
+.bor_le{ border-left: 1px solid #ddd !important; }
+.bor_bt{border-bottom:1px solid #ddd; }
+
+
+/* sub_tabmenu */
+.list_box .tabmenu_sub { width: 100%; border-bottom: 1px solid #ccc; display:inline-block; color: #333; margin: 5px 0 12px 0; font-size: 16px; }
+.list_box .tabmenu_sub li { float:left; padding:11px 0 12px 0; background:#fafafa; margin-left:-1px; border: 1px solid #bebebe; border-bottom: none; }
+.list_box .tabmenu_sub li:first-child { margin-left: 0; }
+.list_box .tabmenu_sub a { color:#333; display: block; width: 140px; text-align: center; font-weight: bold; }
+.list_box .tabmenu_sub li.on { background: #042961; border: 1px solid #4b4b4b; border-bottom: 0; font-weight:bold; padding: 11px 0 12px 0; }
+.list_box .tabmenu_sub li.on a { color:#fff; }
+
+/* tab */
+.tab_1 {display:block;}
+.tab_2 {display:none;}
+.tab_3 {display:none;}

@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+	SQL File Name : EipOcuNotice.xml
+	Description : 공지사항 리스트
+	Modification Information
+	수정일 수정자 Version Query Id
+	===============================
+	2015.08.07 장근석 1.0 최초 생성
+-->
+<mapper namespace="EipOcuNoticeDAO">
+	<!--
+		쿼리명 : 공지사항 조회조건 카테고리 코드
+		설명 : 공지사항 조회조건 카테고리 코드
+		수정일              	수정자      	수정내용
+		==========  ====== 		==============
+		2015.08.07     	장근석      	최초 생성
+		
+		작성자 : 장근석
+		최초작성일 : 2015.08.07
+	-->
+	<select id="EipOcuNoticeDAO.selectOcuNoticeInquireCndList" resultType="eipOcuNoticeAlias">
+		SELECT '%' CTGRYSTR
+					, '전체' CTGRYNAME
+					, '' BBSSECD
+			FROM db_root
+		UNION ALL
+		SELECT CTGRY_SE_CD CTGRYSTR
+					, CTGRY_NM CTGRYNAME
+					, BBS_SE_CD BBSSECD
+		 FROM EIP_PORTAL_BBS_CTGRY
+		 WHERE BBS_SE_CD = '31'
+	</select>
+	
+	<!--
+		쿼리명 : 공지사항 목록 조회
+		설명 : 공지사항 목록 조회
+		수정일            	수정자      수정내용
+		========== 	===== 	==============
+		2015.08.07  	장근석      최초 생성
+		
+		작성자 : 장근석
+		최초작성일 : 2015.08.07
+	-->
+	<select id="EipOcuNoticeDAO.selectOcuNoticeList" resultType="eipOcuNoticeAlias">
+	
+		SELECT SN 
+				, CTGRY_SE_CD
+				, CTGRY_NM	 
+			 	, sj as sj
+				, INS_USR_NM
+				, FIXING_NOTICE_AT
+				, CN
+				, INQIRE_CO
+				, NEW_ICON
+				, FILE_ICON
+				, FILE_ID
+				, INS_DT
+				, RNUM
+		FROM (SELECT SN 
+					, CTGRY_SE_CD
+					, CTGRY_NM
+					, SJ
+					, INS_USR_NM
+					, FIXING_NOTICE_AT				
+					, CN
+					, INQIRE_CO
+					, NEW_ICON
+					, FILE_ICON
+					, FILE_ID
+					, INS_DT
+					, RNUM
+					, ROW_NUMBER() OVER (ORDER BY FIXING_NOTICE_AT DESC, RNUM DESC) AS RNUM2
+				FROM (SELECT SN
+							, CTGRY_SE_CD
+							, (SELECT CTGRY_NM FROM EIP_PORTAL_BBS_CTGRY
+									WHERE BBS_SE_CD = '31'
+									AND CTGRY_SE_CD = T1.CTGRY_SE_CD) AS CTGRY_NM
+							, SJ
+							, INS_USR_ID AS INS_USR_NM
+							, FIXING_NOTICE_AT
+							, CN
+							, INQIRE_CO
+							, TO_CHAR(T1.INS_DT,'YYYY-MM-DD') AS INS_DT
+							, case when TO_CHAR(T1.INS_DT,'YYYYMMDD') >= TO_CHAR(sysdate - 1,'YYYYMMDD')
+										then 'Y'
+									else 'N'
+								end as new_icon
+							, case when (select count(1) from COM_ATCH_FILE_DTL
+											where file_id = T1.FILE_ID
+											and file_nm is not null
+											and file_sn is not null
+											and origin_file_nm is not null) > 0 
+									then 'Y' else 'N' end as file_icon
+							, T1.FILE_ID
+							, ROW_NUMBER() OVER (ORDER BY SN ASC) AS RNUM
+						FROM EIP_PORTAL_BBS T1
+					   	WHERE BBS_SE_CD = '31' 
+					    	AND FIXING_NOTICE_AT='Y'
+				   		 	AND CTGRY_SE_CD = '01'
+					   	 	<if test="searchFindKeyword != ''">
+					   			<if test="searchFindKeyword == 'title'">
+					     			AND T1.SJ LIKE '%'||#{searchKeyword}||'%'
+					   			</if>
+					   			<if test="searchFindKeyword == 'content'">
+					   				AND T1.CN LIKE '%'||#{searchKeyword}||'%'
+					   			</if>
+					   			<if test="searchFindKeyword == 'name'">
+					   				AND T1.INS_USR_ID LIKE '%'||#{searchKeyword}||'%'
+					   			</if>
+					   		</if>
+				UNION ALL
+				SELECT SN
+							, CTGRY_SE_CD
+							, (SELECT CTGRY_NM FROM EIP_PORTAL_BBS_CTGRY
+									WHERE BBS_SE_CD = '31'
+									AND CTGRY_SE_CD = T1.CTGRY_SE_CD) AS CTGRY_NM
+						 	, sj  as sj
+							, T1.INS_USR_ID AS INS_USR_NM
+							, 'N' FIXING_NOTICE_AT
+							, CN
+							, INQIRE_CO
+							, TO_CHAR(T1.INS_DT,'YYYY-MM-DD') AS INS_DT
+							, case when TO_CHAR(T1.INS_DT,'YYYYMMDD') >= TO_CHAR(sysdate - 1,'YYYYMMDD')
+										then 'Y'
+									else 'N'
+								end as new_icon
+							, case when (select count(1) from COM_ATCH_FILE_DTL
+											where file_id = T1.FILE_ID
+											and file_nm is not null
+											and file_sn is not null
+											and origin_file_nm is not null) > 0 
+									then 'Y' else 'N' end as file_icon
+							, T1.FILE_ID
+							, ROW_NUMBER() OVER (ORDER BY SN ASC) AS RNUM
+					FROM EIP_PORTAL_BBS T1
+				   	WHERE BBS_SE_CD = '31'
+				   	 	AND CTGRY_SE_CD = '01'
+				   	 	<if test="searchFindKeyword != ''">
+				   			<if test="searchFindKeyword == 'title'">
+				     			AND T1.SJ LIKE '%'||#{searchKeyword}||'%'
+				   			</if>
+				   			<if test="searchFindKeyword == 'content'">
+				   				AND T1.CN LIKE '%'||#{searchKeyword}||'%'
+				   			</if>
+				   			<if test="searchFindKeyword == 'name'">
+				   				AND T1.INS_USR_ID LIKE '%'||#{searchKeyword}||'%'
+				   			</if>
+				   		</if>)
+				   ORDER BY FIXING_NOTICE_AT DESC, RNUM DESC) A
+		WHERE A.RNUM2 BETWEEN #{firstIndex} + 1 AND #{lastIndex}
+	</select>
+
+
+
+	<!--
+		쿼리명 : 공지사항 페이징처리를 위한 게시글 건수 조회
+		설명 : 공지사항 페이징처리를 위한 게시글 건수 조회
+		수정일               수정자       수정내용
+		==========   ===== ==============
+		2015.08.10      장근석       최초 생성
+		
+		작성자 : 장근석
+		최초작성일 : 2015.08.10
+	-->
+	<select id="EipOcuNoticeDAO.selectOcuNoticeToCnt" resultType="Integer">
+			SELECT COUNT(*)
+			FROM (SELECT SN,
+ 					CTGRY_SE_CD,
+                 ( SELECT CTGRY_NM
+                      FROM EIP_PORTAL_BBS_CTGRY
+                     WHERE BBS_SE_CD = '31'
+                       AND CTGRY_SE_CD = T1.CTGRY_SE_CD) AS CTGRY_NM,
+                 SJ,
+              
+                 T1.INS_USR_ID AS INS_USR_NM,
+                 FIXING_NOTICE_AT,
+                 CN,
+                 INQIRE_CO,
+                 TO_CHAR(T1.INS_DT,
+                 'YYYY-MM-DD') AS INS_DT,
+                 case when TO_CHAR(T1.INS_DT,
+                 'YYYYMMDD') >= TO_CHAR(sysdate - 1,
+                 'YYYYMMDD') then 'Y' else 'N' end as new_icon,
+                 case T1.FILE_ID when '' then 'N' else 'Y' end as file_icon,
+                 T1.FILE_ID,
+                 ROW_NUMBER( ) OVER (
+                            ORDER BY SN ASC ) AS RNUM
+				FROM EIP_PORTAL_BBS T1
+				WHERE BBS_SE_CD = '31' 
+				     AND FIXING_NOTICE_AT='Y'
+			   		 AND CTGRY_SE_CD = '01'
+				   	 <if test="searchFindKeyword != ''">
+				   		<if test="searchFindKeyword == 'title'">
+				     		AND T1.SJ LIKE '%'||#{searchKeyword}||'%'
+				   		</if>
+				   		<if test="searchFindKeyword == 'content'">
+				   			AND T1.CN LIKE '%'||#{searchKeyword}||'%'
+				   		</if>
+				   		<if test="searchFindKeyword == 'name'">
+				   			AND T1.INS_USR_ID LIKE '%'||#{searchKeyword}||'%'
+				   		</if>
+				   	</if>
+				UNION ALL
+        SELECT SN,
+                 CTGRY_SE_CD,
+                 ( SELECT CTGRY_NM
+                      FROM EIP_PORTAL_BBS_CTGRY
+                     WHERE BBS_SE_CD = '31'
+                       AND CTGRY_SE_CD = T1.CTGRY_SE_CD) AS CTGRY_NM,
+                 SJ,
+                 
+                 T1.INS_USR_ID AS INS_USR_NM,
+                 'N' FIXING_NOTICE_AT,
+                 CN,
+                 INQIRE_CO,
+                 TO_CHAR(T1.INS_DT,
+                 'YYYY-MM-DD') AS INS_DT,
+                 case when TO_CHAR(T1.INS_DT,
+                 'YYYYMMDD') >= TO_CHAR(sysdate - 1,
+                 'YYYYMMDD') then 'Y' else 'N' end as new_icon,
+                 case T1.FILE_ID when '' then 'N' else 'Y' end as file_icon,
+                 T1.FILE_ID,
+                 ROW_NUMBER( ) OVER (
+                            ORDER BY SN ASC ) AS RNUM
+					FROM EIP_PORTAL_BBS T1
+				   WHERE BBS_SE_CD = '31'
+				   	 	AND CTGRY_SE_CD = '01'
+				   	 	<if test="searchFindKeyword != ''">
+				   			<if test="searchFindKeyword == 'title'">
+				     			AND T1.SJ LIKE '%'||#{searchKeyword}||'%'
+				   			</if>
+				   			<if test="searchFindKeyword == 'content'">
+				   				AND T1.CN LIKE '%'||#{searchKeyword}||'%'
+				   			</if>
+				   			<if test="searchFindKeyword == 'name'">
+				   				AND T1.INS_USR_ID LIKE '%'||#{searchKeyword}||'%'
+				   			</if>
+				   		</if>)
+	</select>
+	
+		<!--
+		쿼리명 : 공지사항 페이징처리를 위한 게시글 건수 조회
+		설명 : 공지사항 페이징처리를 위한 게시글 건수 조회
+		수정일               수정자       수정내용
+		==========   ===== ==============
+		2015.08.10      장근석       최초 생성
+		
+		작성자 : 장근석
+		최초작성일 : 2015.08.10
+	-->
+	<select id="EipOcuNoticeDAO.selectOcuNoticeToCntOrg" resultType="Integer">
+			SELECT count(*)
+					FROM (SELECT SN
+					FROM EIP_PORTAL_BBS T1
+				   WHERE BBS_SE_CD = '31'
+				   	 AND CTGRY_SE_CD = '01'
+				   	 <if test="searchFindKeyword != ''">
+				   		<if test="searchFindKeyword == 'title'">
+				     		AND T1.SJ LIKE '%'||#{searchKeyword}||'%'
+				   		</if>
+				   		<if test="searchFindKeyword == 'content'">
+				   			AND T1.CN LIKE '%'||#{searchKeyword}||'%'
+				   		</if>
+				   		<if test="searchFindKeyword == 'name'">
+				   			AND T1.INS_USR_ID LIKE '%'||#{searchKeyword}||'%'
+				   		</if>
+				   	</if>)
+	</select>
+
+	<!--
+		쿼리명 : 공지사항 게시글 상세내용 조회
+		설명 : 공지사항의 게시글 상세내용 조회
+		수정일              수정자         수정내용
+		==========   ===== ==============
+		2015.08.10     장근석         최초 생성
+		
+		작성자 : 장근석
+		최초작성일 : 2015.08.10
+	-->
+	
+	<select id="EipOcuNoticeDAO.selectOcuNoticeView" resultType="eipOcuNoticeAlias">
+		SELECT SN
+			, ROWNUM AS RNUM
+			, (SELECT CTGRY_NM FROM EIP_PORTAL_BBS_CTGRY
+					WHERE BBS_SE_CD = '31'
+					AND CTGRY_SE_CD = T1.CTGRY_SE_CD) AS CTGRY_NM
+			, SJ
+			, INS_USR_ID
+			, T1.INS_USR_ID AS INS_USR_NM
+			, BDT_HTML_AT
+			, RTRIM(CN) AS CN
+			, INQIRE_CO
+			, FILE_ID
+			, TO_CHAR(INS_DT,'YYYY-MM-DD') AS INS_DT
+		FROM
+		EIP_PORTAL_BBS T1
+		WHERE SN = #{sn}
+	 </select>
+	
+	<select id="EipOcuNoticeDAO.selectOcuNoticePreView" resultType="eipOcuNoticeAlias">
+			SELECT 
+				RNUM
+				, SN
+				, PREV_RNUM
+				, PREV_SN	 
+			 	, PREV_NM  as PREV_NM
+				, NEXT_RNUM
+				, NEXT_SN
+			 	, NEXT_NM  as NEXT_NM
+					,#{sel_cl} AS sel_cl
+					,#{searchFindKeyword} AS searchFindKeyword
+					,#{searchKeyword} AS searchKeyword
+					,#{pageIndex} as pageIndex
+					,#{pageSize} as pageSize
+				FROM (
+						SELECT 
+								RNUM AS RNUM
+								,SN AS SN
+								,LAG(RNUM,1) OVER (ORDER BY RNUM) PREV_RNUM
+								,LAG(SN, 1) OVER(ORDER BY RNUM) PREV_SN
+								,LAG(SJ, 1) OVER(ORDER BY RNUM) PREV_NM
+								,LEAD(RNUM, 1) OVER(ORDER BY RNUM) NEXT_RNUM
+								,LEAD(SN, 1) OVER(ORDER BY RNUM) NEXT_SN			
+								,LEAD(SJ, 1) OVER(ORDER BY RNUM) NEXT_NM
+						FROM (
+								SELECT
+									ROW_NUMBER() OVER (ORDER BY T1.SN) AS RNUM
+									,T1.SN
+									,T1.SJ
+								FROM
+									EIP_PORTAL_BBS T1
+							  		WHERE T1.BBS_SE_CD = '31'
+									<if test='sel_cl != "%"'>
+										AND T1.CTGRY_SE_CD = '01'
+									</if>
+									<if test="searchFindKeyword != ''">
+					   				<if test="searchFindKeyword == 'title'">
+					     				AND T1.SJ LIKE '%'||#{searchKeyword}||'%'
+					   				</if>
+					   				<if test="searchFindKeyword == 'content'">
+					   					AND T1.CN LIKE '%'||#{searchKeyword}||'%'
+					   				</if>
+					   				<if test="searchFindKeyword == 'name'">
+					   					AND T1.INS_USR_ID LIKE '%'||#{searchKeyword}||'%'
+					   				</if>
+					   			</if>
+								) 
+						)WHERE SN = #{sn}
+	</select>	
+	
+	<update id="EipOcuNoticeDAO.updateOcuNoticeInqireCo">
+		UPDATE EIP_PORTAL_BBS
+			set INQIRE_CO = (SELECT MAX(INQIRE_CO) + 1
+										FROM EIP_PORTAL_BBS
+									WHERE BBS_SE_CD = '31'
+			   							AND SN = #{sn})
+	   WHERE BBS_SE_CD = '31'
+	   		AND SN = #{sn}
+	</update>
+	
+				<!--
+		쿼리명 : 공지사항 첨부파일 목록조회
+		설명 : 공지사항 첨부파일 목록조회
+		수정일              수정자    수정내용
+		========== ===== ==============
+		2015.07.29     장근석      최초 생성
+		
+		작성자 : 장근석
+		최초작성일 : 2015.07.29
+	-->
+	<select id="EipOcuNoticeDAO.selectFileList" resultType="eipOcuNoticeAlias">
+		SELECT 
+			FILE_ID
+			,FILE_SN
+			,FILE_NM
+			,ORIGIN_FILE_NM
+		FROM COM_ATCH_FILE_DTL
+		WHERE FILE_ID = (SELECT FILE_ID FROM EIP_PORTAL_BBS WHERE SN = #{sn})
+		ORDER BY FILE_SN
+	</select>
+		<!--
+		쿼리명 : 공지사항 페이지 사이즈 조회
+		설명 : 공지사항의 페이지 사이즈를 조회한다.
+		수정일              수정자    수정내용
+		========== ===== ==============
+		2015.11.12     장근석      최초 생성
+		
+		작성자 : 장근석
+		최초작성일 : 2015.11.12
+	-->
+	<select id="EipOcuNoticeDAO.selectPageSizeList" resultType="eipOcuNoticeAlias">
+		SELECT 
+				CD AS CTGRYSTR
+				, CD_NM AS CTGRYNAME
+		FROM COM_CMMN_CD
+		WHERE 1=1 
+			AND CD_GRP = 'EIP38'
+		ORDER BY OUTPT_ORDR ASC
+	</select>
+</mapper>
+

@@ -1,0 +1,338 @@
+src/main/java/dextuploadnj/sample/ko/spring/DataRepository.java:15:	mothod 레벨의 synchronization 보다 block 레벨 synchronization 을 사용하는 것이 바람직함
+src/main/java/dextuploadnj/sample/ko/spring/DataRepository.java:43:	mothod 레벨의 synchronization 보다 block 레벨 synchronization 을 사용하는 것이 바람직함
+src/main/java/dextuploadnj/sample/ko/spring/FileRepository.java:15:	mothod 레벨의 synchronization 보다 block 레벨 synchronization 을 사용하는 것이 바람직함
+src/main/java/dextuploadnj/sample/ko/spring/FileRepository.java:43:	mothod 레벨의 synchronization 보다 block 레벨 synchronization 을 사용하는 것이 바람직함
+src/main/java/dextuploadnj/sample/ko/spring/SampleDownloadController.java:17:	동일 패키지에 있을 때는 import문을 사용할 필요가 없음
+src/main/java/dextuploadnj/sample/ko/spring/SampleDownloadController.java:18:	동일 패키지에 있을 때는 import문을 사용할 필요가 없음
+src/main/java/dextuploadnj/sample/ko/spring/SampleUploadController.java:14:	동일 패키지에 있을 때는 import문을 사용할 필요가 없음
+src/main/java/dextuploadnj/sample/ko/spring/SampleUploadController.java:15:	동일 패키지에 있을 때는 import문을 사용할 필요가 없음
+src/main/java/dextuploadnj/sample/ko/spring/SampleUploadController.java:16:	동일 패키지에 있을 때는 import문을 사용할 필요가 없음
+src/main/java/egovframework/com/cmm/filter/HTMLTagFilter.java:43:	빈 Method에 주석을 추가할것
+src/main/java/kcue/ast/eip/com/web/EipComScoreMgrController.java:119:	Switch구문에는 반드시 default label이 있어야 함
+src/main/java/kcue/ast/eip/cun/comput/web/ConComputVrifyController.java:71:	사용되지 않는 Private field 'conFtrcScrComputController' 가 선언되었음
+src/main/java/kcue/ast/eip/cun/mng/csat/web/ConCsatScrMngController.java:73:	빈 if 구문의 사용을 피하도록 함
+src/main/java/kcue/ast/eip/cun/mng/sgc/web/ConStdptScrMngPrintController.java:39:	사용되지 않는 Private field 'conStdptScrMngService' 가 선언되었음
+src/main/java/kcue/ast/eip/cun/mng/sgc/web/ConStdptScrMngPrintController.java:47:	사용되지 않는 Private field 'messageSource' 가 선언되었음
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConAtrcrScrComputController.java:1672:	'pstGuidVO' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2019.java:1131:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2019.java:1131:	'sgrdList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2019.java:1305:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2019.java:1305:	'sgrdList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2019.java:1475:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2019.java:1475:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2019.java:1475:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2019.java:1516:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2019.java:1516:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2019.java:1516:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2019.java:1582:	String 을 append 할 경우, String.valueOf 함수를 사용할 필요 없음.
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2019.java:4821:	'sbjectNm' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2019.java:4821:	'sbjectNm' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2019.java:4821:	'sbjectNm' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2019.java:4821:	'sbjectNm' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2019.java:4821:	'sbjectNm' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2019.java:7618:	배열의 값을 루프문을 이용하여 복사하는 것 보다 System.arraycopy() 메소드를 이용하여 복사하는 것이 효율적이며 수행 속도가 빠름
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2019.java:37453:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:50:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:52:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:54:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:56:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:58:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:60:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:62:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:64:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:66:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:68:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:70:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:72:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:74:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:76:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:78:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:80:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:82:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:84:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:86:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:88:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:90:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:92:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:94:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:96:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:100:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:102:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:112:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:114:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:116:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:118:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:121:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:124:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:126:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:128:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:130:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:132:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:134:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:136:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:138:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:146:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:149:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:152:	static 필드의 안전하지않은 사용 가능성
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:1135:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:1135:	'sgrdList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:1309:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:1309:	'sgrdList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:1479:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:1479:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:1479:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:1520:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:1520:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:1520:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:1586:	String 을 append 할 경우, String.valueOf 함수를 사용할 필요 없음.
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:1607:	'sbjectNm' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:1607:	'sbjectNm' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:1607:	'sbjectNm' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:1607:	'sbjectNm' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:1607:	'sbjectNm' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgc2020.java:2275:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2020.java:1274:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2020.java:1274:	'sgrdList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2020.java:1498:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2020.java:1499:	'sgrdList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2020.java:1718:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2020.java:1718:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2020.java:1718:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2020.java:1763:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2020.java:1763:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2020.java:1763:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2020.java:1831:	String 을 append 할 경우, String.valueOf 함수를 사용할 필요 없음.
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2020.java:1853:	'sbjectNm' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2020.java:1853:	'sbjectNm' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2020.java:1853:	'sbjectNm' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2020.java:1853:	'sbjectNm' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2020.java:1853:	'sbjectNm' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2020.java:2644:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2020.java:40364:	배열의 값을 루프문을 이용하여 복사하는 것 보다 System.arraycopy() 메소드를 이용하여 복사하는 것이 효율적이며 수행 속도가 빠름
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2020.java:41017:	배열의 값을 루프문을 이용하여 복사하는 것 보다 System.arraycopy() 메소드를 이용하여 복사하는 것이 효율적이며 수행 속도가 빠름
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2021.java:1274:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2021.java:1274:	'sgrdList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2021.java:1498:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2021.java:1499:	'sgrdList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2021.java:1718:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2021.java:1718:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2021.java:1718:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2021.java:1763:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2021.java:1763:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2021.java:1763:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2021.java:1831:	String 을 append 할 경우, String.valueOf 함수를 사용할 필요 없음.
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2021.java:1853:	'sbjectNm' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2021.java:1853:	'sbjectNm' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2021.java:1853:	'sbjectNm' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2021.java:1853:	'sbjectNm' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2021.java:1853:	'sbjectNm' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConComputSgcOrg2021.java:2644:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConSgc2020Univ0000000.java:22:	빈 Method에 주석을 추가할것
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConSgc2020Univ0000037.java:71:	배열의 값을 루프문을 이용하여 복사하는 것 보다 System.arraycopy() 메소드를 이용하여 복사하는 것이 효율적이며 수행 속도가 빠름
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConSgc2020Univ0000198.java:195:	배열의 값을 루프문을 이용하여 복사하는 것 보다 System.arraycopy() 메소드를 이용하여 복사하는 것이 효율적이며 수행 속도가 빠름
+src/main/java/kcue/ast/eip/cun/ssa/atrcr/web/ConSgc2020Univ0000252.java:5:	빈 Method에 주석을 추가할것
+src/main/java/kcue/ast/eip/cun/ssa/ftrc/web/ConComputCsat2019.java:2122:	String 을 append 할 경우, String.valueOf 함수를 사용할 필요 없음.
+src/main/java/kcue/ast/eip/cun/ssa/ftrc/web/ConComputCsat2019.java:2683:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/ftrc/web/ConComputCsat2019.java:2683:	'sgrdList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/ftrc/web/ConComputCsat2019.java:58093:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/ftrc/web/ConComputCsat2019.java:58093:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/ftrc/web/ConComputCsat2019.java:58093:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/ftrc/web/ConComputCsat2020.java:2126:	String 을 append 할 경우, String.valueOf 함수를 사용할 필요 없음.
+src/main/java/kcue/ast/eip/cun/ssa/ftrc/web/ConComputCsat2020.java:2687:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/ftrc/web/ConComputCsat2020.java:2687:	'sgrdList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/ftrc/web/ConComputCsat2020.java:6798:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/ftrc/web/ConComputCsat2020.java:6798:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/ftrc/web/ConComputCsat2020.java:6798:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/ftrc/web/ConComputCsat2020.java:59224:	필요없는 문장 (;)이 있음
+src/main/java/kcue/ast/eip/cun/ssa/ftrc/web/ConComputCsat2020.java:59260:	필요없는 문장 (;)이 있음
+src/main/java/kcue/ast/eip/cun/ssa/ftrc/web/ConComputCsat2021.java:2126:	String 을 append 할 경우, String.valueOf 함수를 사용할 필요 없음.
+src/main/java/kcue/ast/eip/cun/ssa/ftrc/web/ConComputCsat2021.java:2687:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/ftrc/web/ConComputCsat2021.java:2687:	'sgrdList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/ftrc/web/ConComputCsat2021.java:6798:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/ftrc/web/ConComputCsat2021.java:6798:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/cun/ssa/ftrc/web/ConComputCsat2021.java:6798:	'courseList' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/cnslt/schdul/service/impl/EipCnsltSchdulServiceImpl.java:42:	사용되지 않는 Private field 'log' 가 선언되었음
+src/main/java/kcue/ast/eip/eis/cnslt/schdul/web/EipCnsltSchdulController.java:83:	SimpleDateFormat 인스턴스를 생성할때 Locale 을 지정하는 것이 바람직함
+src/main/java/kcue/ast/eip/eis/cnslt/telresve/web/EipTelResveCnsltController.java:548:	'sn' 처럼  사용되지 않는  'method' 파라미터가 있음
+src/main/java/kcue/ast/eip/eis/cnslt/telresve/web/EipTelResveCnsltController.java:548:	사용되지 않는 Private Method 'parseInt(int)' 가 선언되었음
+src/main/java/kcue/ast/eip/eis/cnslt/telunvent/web/EipTelUnivCnsltController.java:59:	사용되지 않는 Private field 'messageSource' 가 선언되었음
+src/main/java/kcue/ast/eip/eis/cnslt/workpsi/service/impl/EipWorkPsiServiceImpl.java:195:	Switch구문에는 반드시 default label이 있어야 함
+src/main/java/kcue/ast/eip/eis/cnslt/workpsi/web/EipWorkPsiController.java:38:	사용되지 않는 Private field 'log' 가 선언되었음
+src/main/java/kcue/ast/eip/eis/cnslt/workpsi/web/EipWorkPsiController.java:49:	사용되지 않는 Private field 'messageSource' 가 선언되었음
+src/main/java/kcue/ast/eip/eis/cstmr/useinqry/service/EipAnsQestnVO.java:98:	사용되지 않는 Private field 'searchThrExtField' 가 선언되었음
+src/main/java/kcue/ast/eip/eis/inf/coseinf/web/EipCoseInfOccpClController.java:498:	System.out.print 가 사용됨.
+src/main/java/kcue/ast/eip/eis/inf/coseinf/web/EipCoseInfOccpClController.java:502:	System.out.print 가 사용됨.
+src/main/java/kcue/ast/eip/eis/inf/coseinf/web/EipCoseInfOccpClController.java:1184:	빈 if 구문의 사용을 피하도록 함
+src/main/java/kcue/ast/eip/eis/inf/selctninf/web/EipSelctnInfSelScheMthGnrlController.java:152:	SimpleDateFormat 인스턴스를 생성할때 Locale 을 지정하는 것이 바람직함
+src/main/java/kcue/ast/eip/eis/inf/selctninf/web/EipSelctnInfSelScheMthGnrlController.java:272:	SimpleDateFormat 인스턴스를 생성할때 Locale 을 지정하는 것이 바람직함
+src/main/java/kcue/ast/eip/eis/inf/univinf/web/EipUinfStdptSelctnController.java:60:	사용되지 않는 Private field 'messageSource' 가 선언되었음
+src/main/java/kcue/ast/eip/eis/inf/univinf/web/EipUinfStdptSelctnController.java:63:	사용되지 않는 Private field 'log' 가 선언되었음
+src/main/java/kcue/ast/eip/eis/mypge/certify/web/EipMyCertifyController.java:47:	'certi_se_cd' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/mypge/certify/web/EipMyCertifyController.java:80:	'certi_se_cd' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/mypge/chldrnentsch/web/EipEntschAsstnReqController.java:153:	'certi_se_cd' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/mypge/chldrnentsch/web/EipEntschAsstnReqController.java:191:	'certi_se_cd' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/mypge/chldrnentsch/web/EipEntschAsstnReqController.java:377:	빈 if 구문의 사용을 피하도록 함
+src/main/java/kcue/ast/eip/eis/mypge/chldrnentsch/web/EipEntschAsstnReqController.java:410:	'tab' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/mypge/goalunivschul/web/EipGoalUnivSchdulController.java:85:	SimpleDateFormat 인스턴스를 생성할때 Locale 을 지정하는 것이 바람직함
+src/main/java/kcue/ast/eip/eis/mypge/schdul/web/EipCldrExController.java:90:	SimpleDateFormat 인스턴스를 생성할때 Locale 을 지정하는 것이 바람직함
+src/main/java/kcue/ast/eip/eis/mypge/schdul/web/EipCldrExController.java:265:	SimpleDateFormat 인스턴스를 생성할때 Locale 을 지정하는 것이 바람직함
+src/main/java/kcue/ast/eip/eis/mypge/submainpge/web/EipSubMainController.java:53:	사용되지 않는 Private field 'messageSource' 가 선언되었음
+src/main/java/kcue/ast/eip/eis/mypge/violtinf/web/EipMyVioltInfCnController.java:75:	'certify_yn' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/mypge/violtinf/web/EipMyVioltInfCnController.java:164:	'certi_se_cd' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/mypge/violtinf/web/EipMyVioltInfCnController.java:215:	'certi_se_cd' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/presnatn/expo/web/EipUnventInfExhbListController.java:92:	빈 if 구문의 사용을 피하도록 함
+src/main/java/kcue/ast/eip/eis/presnatn/schdul/web/EipPresnatnSchdulController.java:86:	SimpleDateFormat 인스턴스를 생성할때 Locale 을 지정하는 것이 바람직함
+src/main/java/kcue/ast/eip/eis/search/object/EipPeriodPopularObject.java:67:	가공되지 않은 Exception을 throw하는 것은 비추천
+src/main/java/kcue/ast/eip/eis/search/object/EipPopularObject.java:55:	가공되지 않은 Exception을 throw하는 것은 비추천
+src/main/java/kcue/ast/eip/eis/search/object/EipSearchClickLogObject.java:36:	사용되지 않는 Private Method 'makeSearchLogQueryURL()' 가 선언되었음
+src/main/java/kcue/ast/eip/eis/search/object/EipSearchClickLogObject.java:81:	가공되지 않은 Exception을 throw하는 것은 비추천
+src/main/java/kcue/ast/eip/eis/search/object/EipSearchLogObject.java:294:	가공되지 않은 Exception을 throw하는 것은 비추천
+src/main/java/kcue/ast/eip/eis/search/object/EipSearchQueryObject.java:11:	생성자에서 Assign된 변수 'restApiURL' 를 Final로 선언하지 않았음
+src/main/java/kcue/ast/eip/eis/search/object/EipSearchQueryObject.java:157:	가공되지 않은 Exception을 throw하는 것은 비추천
+src/main/java/kcue/ast/eip/eis/search/object/EipSearchRelateKeyword.java:62:	가공되지 않은 Exception을 throw하는 것은 비추천
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipAnalyticsServiceImpl.java:317:	SimpleDateFormat 인스턴스를 생성할때 Locale 을 지정하는 것이 바람직함
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipAnalyticsServiceImpl.java:367:	SimpleDateFormat 인스턴스를 생성할때 Locale 을 지정하는 것이 바람직함
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipAnalyticsServiceImpl.java:451:	가공되지 않은 Exception을 throw하는 것은 비추천
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipAnalyticsServiceImpl.java:453:	가공되지 않은 Exception을 throw하는 것은 비추천
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipAnalyticsServiceImpl.java:455:	가공되지 않은 Exception을 throw하는 것은 비추천
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipAnalyticsServiceImpl.java:457:	가공되지 않은 Exception을 throw하는 것은 비추천
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipAnalyticsServiceImpl.java:462:	가공되지 않은 Exception을 throw하는 것은 비추천
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipAnalyticsServiceImpl.java:473:	가공되지 않은 Exception을 throw하는 것은 비추천
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:34:	사용되지 않는 Private field 'SE_AND' 가 선언되었음
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:54:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:99:	빈 if 구문의 사용을 피하도록 함
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:178:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:226:	빈 if 구문의 사용을 피하도록 함
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:269:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:328:	빈 if 구문의 사용을 피하도록 함
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:371:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:426:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:454:	SimpleDateFormat 인스턴스를 생성할때 Locale 을 지정하는 것이 바람직함
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:505:	빈 if 구문의 사용을 피하도록 함
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:638:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:683:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:683:	'searchOptionKeyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:709:	빈 if 구문의 사용을 피하도록 함
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:814:	가공되지 않은 Exception을 throw하는 것은 비추천
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:816:	가공되지 않은 Exception을 throw하는 것은 비추천
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:818:	가공되지 않은 Exception을 throw하는 것은 비추천
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:820:	가공되지 않은 Exception을 throw하는 것은 비추천
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:825:	가공되지 않은 Exception을 throw하는 것은 비추천
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:836:	가공되지 않은 Exception을 throw하는 것은 비추천
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:849:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:849:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:849:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:849:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:849:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:849:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:849:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:849:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:849:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:849:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:849:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:869:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:869:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:869:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:869:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:869:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:869:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:869:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/service/impl/EipSearchServiceImpl.java:869:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:44:	사용되지 않는 Private field 'log' 가 선언되었음
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:48:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:48:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:50:	'searchLog' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:51:	'sortSubmitDate' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:52:	'sortAccuracy' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:53:	'sortPopular' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:54:	'sortPeriod' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:55:	'sortTarget' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:56:	'sortYear' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:57:	'sortPlace' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:57:	'sortPlace' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:58:	'searchOption' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:58:	'searchOption' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:465:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:470:	'searchLog' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:471:	'sortSubmitDate' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:472:	'sortAccuracy' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:473:	'sortPopular' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:474:	'sortPeriod' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:475:	'sortTarget' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:476:	'sortYear' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:477:	'sortPlace' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:477:	'sortPlace' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:478:	'searchOption' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:478:	'searchOption' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:478:	'searchOption' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:486:	필요없는 Instance가 생성되어 있음
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:487:	필요없는 Instance가 생성되어 있음
+src/main/java/kcue/ast/eip/eis/search/web/EipSearchController.java:1044:	'keyword' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/common/KcueDefaultVO.java:138:	final field를 Static 으로 변경하면 overhead 를 줄일 수 있음.
+src/main/java/kcue/common/advice/KcueMethodInvokeAspect.java:17:	빈 Method에 주석을 추가할것
+src/main/java/kcue/common/advice/KcueMethodInvokeAspect.java:20:	빈 Method에 주석을 추가할것
+src/main/java/kcue/common/interceptor/KcueAuthInterceptor.java:90:	StringBuffer 함수에서 nonliteral 을 직접 concatenate 하지 말 것
+src/main/java/kcue/common/interceptor/KcueAuthInterceptor.java:232:	사용되지 않는 Private Method 'actionParamString(Map)' 가 선언되었음
+src/main/java/kcue/common/interceptor/KcueLoggingInterceptor.java:96:	사용되지 않는 Private Method 'actionParamString(Map)' 가 선언되었음
+src/main/java/kcue/common/result/KcueResultVO.java:66:	final field를 Static 으로 변경하면 overhead 를 줄일 수 있음.
+src/main/java/kcue/common/result/KcueResultVO.java:67:	final field를 Static 으로 변경하면 overhead 를 줄일 수 있음.
+src/main/java/kcue/common/result/KcueResultVO.java:68:	final field를 Static 으로 변경하면 overhead 를 줄일 수 있음.
+src/main/java/kcue/common/result/KcueResultVO.java:69:	final field를 Static 으로 변경하면 overhead 를 줄일 수 있음.
+src/main/java/kcue/common/result/KcueResultVO.java:75:	빈 if 구문의 사용을 피하도록 함
+src/main/java/kcue/common/service/KcueAbstractDAO.java:29:	Abstract Class내에  Abstract Method가 존재하지 않음
+src/main/java/kcue/common/util/Base64.java:144:	'iLen' 처럼  사용되지 않는  'method' 파라미터가 있음
+src/main/java/kcue/common/util/Base64.java:149:	Switch구문에는 반드시 default label이 있어야 함
+src/main/java/kcue/common/util/Base64.java:171:	필요없는 문장 (;)이 있음
+src/main/java/kcue/common/util/DateUtil.java:47:	'inputDate' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/common/util/DateUtil.java:47:	'pattern' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/common/util/DateUtil.java:137:	'inputDate' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/common/util/DateUtil.java:137:	'pattern' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/common/util/DateUtil.java:161:	'pattern' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/common/util/DateUtil.java:181:	'pattern' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/common/util/DateUtil.java:212:	필요없는 Instance가 생성되어 있음
+src/main/java/kcue/common/util/DateUtil.java:231:	'pattern' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/common/util/DateUtil.java:341:	SimpleDateFormat 인스턴스를 생성할때 Locale 을 지정하는 것이 바람직함
+src/main/java/kcue/common/util/DateUtil.java:346:	SimpleDateFormat 인스턴스를 생성할때 Locale 을 지정하는 것이 바람직함
+src/main/java/kcue/common/util/ExcelFileType.java:46:	가공되지 않은 Exception을 throw하는 것은 비추천
+src/main/java/kcue/common/util/ExcelFileType.java:53:	가공되지 않은 Exception을 throw하는 것은 비추천
+src/main/java/kcue/common/util/ExcelFileType.java:58:	가공되지 않은 Exception을 throw하는 것은 비추천
+src/main/java/kcue/common/util/KsignCryptoUtil.java:41:	사용되지 않는 Private field 'messageSource' 가 선언되었음
+src/main/java/kcue/common/util/KsignCryptoUtil.java:50:	생성자에서 Assign된 변수 'strDomain' 를 Final로 선언하지 않았음
+src/main/java/kcue/common/util/KsignCryptoUtil.java:53:	생성자에서 Assign된 변수 'strIp' 를 Final로 선언하지 않았음
+src/main/java/kcue/common/util/KsignCryptoUtil.java:56:	생성자에서 Assign된 변수 'strScheme' 를 Final로 선언하지 않았음
+src/main/java/kcue/common/util/KsignCryptoUtil.java:59:	생성자에서 Assign된 변수 'strTable' 를 Final로 선언하지 않았음
+src/main/java/kcue/common/util/KsignCryptoUtil.java:62:	생성자에서 Assign된 변수 'strMode' 를 Final로 선언하지 않았음
+src/main/java/kcue/common/util/NavigatorUtils.java:215:	boolean 사용 시 불필요한 비교 연산을 피하도록 함
+src/main/java/kcue/common/util/NavigatorUtils.java:217:	boolean 사용 시 불필요한 비교 연산을 피하도록 함
+src/main/java/kcue/common/util/NavigatorUtils.java:227:	boolean 사용 시 불필요한 비교 연산을 피하도록 함
+src/main/java/kcue/common/util/NavigatorUtils.java:229:	boolean 사용 시 불필요한 비교 연산을 피하도록 함
+src/main/java/kcue/common/util/NavigatorUtils.java:231:	boolean 사용 시 불필요한 비교 연산을 피하도록 함
+src/main/java/kcue/common/util/NavigatorUtils.java:243:	boolean 사용 시 불필요한 비교 연산을 피하도록 함
+src/main/java/kcue/common/util/NavigatorUtils.java:243:	boolean 사용 시 불필요한 비교 연산을 피하도록 함
+src/main/java/kcue/common/util/NavigatorUtils.java:249:	boolean 사용 시 불필요한 비교 연산을 피하도록 함
+src/main/java/kcue/common/util/NavigatorUtils.java:251:	boolean 사용 시 불필요한 비교 연산을 피하도록 함
+src/main/java/kcue/common/util/NavigatorUtils.java:270:	boolean 사용 시 불필요한 비교 연산을 피하도록 함
+src/main/java/kcue/common/util/NavigatorUtils.java:272:	boolean 사용 시 불필요한 비교 연산을 피하도록 함
+src/main/java/kcue/common/util/NavigatorUtils.java:282:	boolean 사용 시 불필요한 비교 연산을 피하도록 함
+src/main/java/kcue/common/util/NavigatorUtils.java:284:	boolean 사용 시 불필요한 비교 연산을 피하도록 함
+src/main/java/kcue/common/util/NavigatorUtils.java:286:	boolean 사용 시 불필요한 비교 연산을 피하도록 함
+src/main/java/kcue/common/util/NavigatorUtils.java:297:	boolean 사용 시 불필요한 비교 연산을 피하도록 함
+src/main/java/kcue/common/util/NavigatorUtils.java:297:	boolean 사용 시 불필요한 비교 연산을 피하도록 함
+src/main/java/kcue/common/util/NavigatorUtils.java:302:	boolean 사용 시 불필요한 비교 연산을 피하도록 함
+src/main/java/kcue/common/util/NavigatorUtils.java:325:	boolean 사용 시 불필요한 비교 연산을 피하도록 함
+src/main/java/kcue/common/util/NavigatorUtils.java:327:	boolean 사용 시 불필요한 비교 연산을 피하도록 함
+src/main/java/kcue/common/util/NavigatorUtils.java:339:	boolean 사용 시 불필요한 비교 연산을 피하도록 함
+src/main/java/kcue/common/util/NavigatorUtils.java:341:	boolean 사용 시 불필요한 비교 연산을 피하도록 함
+src/main/java/kcue/common/util/NavigatorUtils.java:343:	boolean 사용 시 불필요한 비교 연산을 피하도록 함
+src/main/java/kcue/common/util/NavigatorUtils.java:354:	boolean 사용 시 불필요한 비교 연산을 피하도록 함
+src/main/java/kcue/common/util/NavigatorUtils.java:354:	boolean 사용 시 불필요한 비교 연산을 피하도록 함
+src/main/java/kcue/common/util/NavigatorUtils.java:359:	boolean 사용 시 불필요한 비교 연산을 피하도록 함
+src/main/java/kcue/common/util/NavigatorUtils.java:370:	boolean 사용 시 불필요한 비교 연산을 피하도록 함
+src/main/java/kcue/common/util/NavigatorUtils.java:370:	boolean 사용 시 불필요한 비교 연산을 피하도록 함
+src/main/java/kcue/common/util/StringUtil.java:78:	Empty String 을 체크하기 위해 String.trim().length() 을 사용하는 것은 피하도록 함
+src/main/java/kcue/common/util/StringUtil.java:697:	'str' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/common/util/StringUtil.java:767:	'html' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/common/util/StringUtil.java:767:	'html' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/common/util/StringUtil.java:767:	'html' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/common/util/StringUtil.java:767:	'html' 처럼 파라미터 값을 직접 변경하지 말것
+src/main/java/kcue/common/util/UUIT.java:51:	괄호가 없어도 되는 상황에서 불필요한 괄호를 사용할 경우 마치 메소드 호출처럼 보여서 소스 코드의 가독성을 떨어뜨릴 수 있음.
