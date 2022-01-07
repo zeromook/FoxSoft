@@ -17,5 +17,6 @@
 		<property name="configLocation" value="classpath:/egovframework/sqlmap/config/mybatis/sql-map-config-kcue.xml" />
 		<property name="mapperLocations" value="classpath:/kcue/ast/**/*.xml" />
 	</bean>
+
 	
 </beans>    

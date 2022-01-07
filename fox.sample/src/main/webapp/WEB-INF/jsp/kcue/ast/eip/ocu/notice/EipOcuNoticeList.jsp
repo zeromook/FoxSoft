@@ -60,7 +60,6 @@
 			$('#paginationholder').html('');
 		    $('#paginationholder').html('<ul id="pagination" class="pages"></ul>');
 						
-		    //submit 보낼때 이형식으로 보내기---------------------------------------------------------------------------------
 			gfn_Submission_Call("/kcue/ast/eip/ocu/notice/EipOcuNoticeList.do",$("#frm").serialize(), function(data){
 				if(data != null){
 			        if (data.resultVO.resultCode == "SUCCESS")
@@ -289,6 +288,7 @@
             	<form:form commandName="eipOcuNoticeVO" id="frm" name="frm" method="post"  onsubmit="return false;">
             	<div class="content_top">
                     <h1>공지사항</h1>
+                    <a href="/kcue/ast/eip/ocu/answerboardlist/EipOcuAnswerBoardList.do">Gesipan</a>
                     <div class="search_box">
                         <form:hidden path="pageIndex" id="pageIndex"/>
                             <fieldset>
@@ -309,7 +309,7 @@
 	                    <p class="list_ct">총<span class="num" id="totalCountOrg">0</span>건이 있습니다.</p>
 	                     <form:select path="pageSize" class="list_num" id="pageSize" items="${pageSizeList}" itemValue="ctgryStr" itemLabel="ctgryName" multiple="false" onchange="fn_pageOnChange();"/>
 	                </div>
-	                <a href="/kcue/ast/eip/ocu/notice/EipOcuNoticeGesipan.do"><h1>게시판.........................................</h1></a>
+	                
 	                <div class="tbl_list">
 	                   <table>
 	                      <caption>인증대학현황 지역별 리스트</caption>

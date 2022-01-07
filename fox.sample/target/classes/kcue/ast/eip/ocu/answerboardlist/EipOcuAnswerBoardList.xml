@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+	SQL File Name : EipOcuAnswerBoardList.xml
+	Description : 답변게시판 리스트
+	Modification Information
+	수정일 수정자 Version Query Id
+	===============================
+	2021.01.07      정영묵      	 최초 생성
+-->
+<mapper namespace="EipOcuAnswerBoardListDAO">
+	<!--
+		쿼리명 : 공지사항 조회조건 카테고리 코드
+		설명 : 공지사항 조회조건 카테고리 코드
+		수정일              	수정자      	수정내용
+		==========  ====== 		==============
+		2021.01.07      정영묵      	 최초 생성
+		
+		작성자 : 정영묵
+		최초작성일 : 2021.01.07
+	-->
+	<select id="EipOcuAnswerBoardListDAO.selectinquiryConditions" resultType="JogunAlias">
+		 SELECT cd,cd_nm 
+		 FROM com_cmmn_cd 
+		 WHERE cd_grp = 'CMN02'
+	</select>
+	
+	<select id="EipOcuAnswerBoardListDAO.getboardCount" resultType="int">
+		SELECT COUNT(bbs_sn) FROM com_bbs
+	</select>
+	
+	
+	<select id="EipOcuAnswerBoardListDAO.selectAnswerBoardList" parameterType="hashmap" resultType="EipOcuAnswerBoardListAlias">
+		SELECT *
+		FROM com_bbs
+		WHERE #{searchFindKeyword} LIKE '%' || #{inputtext} || '%'
+		<if test="process_sttus != allConditions">
+		AND process_sttus = #{process_sttus}
+		</if>
+	</select>
+	
+	
+</mapper>
+

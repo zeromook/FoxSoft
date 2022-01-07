@@ -8,6 +8,8 @@
 
 	<typeAliases>
 		<typeAlias  alias="eipOcuNoticeAlias" type="kcue.ast.eip.ocu.notice.service.EipOcuNoticeVO"/>
+		<typeAlias  alias="JogunAlias" type="kcue.ast.eip.ocu.answerboardlist.service.JogunVO"/>
+		<typeAlias  alias="EipOcuAnswerBoardListAlias" type="kcue.ast.eip.ocu.answerboardlist.service.EipOcuAnswerBoardListVO"/>
 	</typeAliases>
 
 </configuration>
